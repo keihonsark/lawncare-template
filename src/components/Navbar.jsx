@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import { Link } from 'react-router-dom'
 import './Navbar.css'
 
@@ -6,6 +6,16 @@ export default function Navbar() {
   const [scrolled, setScrolled] = useState(false)
   const [open, setOpen] = useState(false)
   const [svcOpen, setSvcOpen] = useState(false)
+  const svcTimeout = useRef(null)
+
+  const handleSvcEnter = () => {
+    clearTimeout(svcTimeout.current)
+    setSvcOpen(true)
+  }
+
+  const handleSvcLeave = () => {
+    svcTimeout.current = setTimeout(() => setSvcOpen(false), 180)
+  }
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 60)
@@ -48,8 +58,8 @@ export default function Navbar() {
           <ul className="nav__links">
             <li
               className="nav__dropdown"
-              onMouseEnter={() => setSvcOpen(true)}
-              onMouseLeave={() => setSvcOpen(false)}
+              onMouseEnter={handleSvcEnter}
+              onMouseLeave={handleSvcLeave}
             >
               <button
                 className="nav__dropdown-toggle"
