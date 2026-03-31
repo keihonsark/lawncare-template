@@ -8,6 +8,7 @@ import AllServices from '../components/AllServices'
 import EstimatorBanner from '../components/EstimatorBanner'
 import PhotoStrip from '../components/PhotoStrip'
 import Reviews from '../components/Reviews'
+import QuizBanner from '../components/QuizBanner'
 import TrustBadges from '../components/TrustBadges'
 import CtaBanner from '../components/CtaBanner'
 import ServiceAreas from '../components/ServiceAreas'
@@ -31,6 +32,7 @@ export default function Home() {
       <EstimatorBanner />
       <PhotoStrip />
       <Reviews />
+      <QuizBanner />
       <TrustBadges />
       <CtaBanner />
       <ServiceAreas />
