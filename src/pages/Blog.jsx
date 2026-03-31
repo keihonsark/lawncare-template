@@ -13,7 +13,7 @@ export default function Blog() {
       <Navbar />
       <section className="blog-hero">
         <div className="container blog-hero__content">
-          <h1 className="blog-hero__title">The Bros Blog</h1>
+          <h1 className="blog-hero__title">Our Blog</h1>
           <p className="blog-hero__sub">
             Lawn care tips, seasonal guides, and updates from the crew.
           </p>

@@ -1,5 +1,8 @@
 import { Link } from 'react-router-dom'
+import config from '../config'
 import './Services.css'
+
+const { services: svcContent } = config.content
 
 const services = [
   { img: '/08_lawn_maintenance.png', icon: '🌱', title: 'Lawn Maintenance', desc: 'Mowing, edging, trimming, and blowing. Weekly and bi-weekly plans to keep your lawn sharp all season.', link: '/services/lawn-maintenance' },
@@ -14,12 +17,11 @@ export default function Services() {
   return (
     <section id="services" className="services fade-up">
       <div className="container">
-        <p className="services__eyebrow">What We Do</p>
-        <h2 className="services__heading sh__heading">Our <span className="sh__outline">Services</span></h2>
+        <p className="services__eyebrow">{svcContent.eyebrow}</p>
+        <h2 className="services__heading sh__heading">{svcContent.headline.replace('Services', '').trim()} <span className="sh__outline">Services</span></h2>
         <div className="sh__line" />
         <p className="services__sub">
-          Comprehensive lawn care and landscaping solutions for residential and
-          commercial properties across the Central Valley.
+          {svcContent.subheadline}
         </p>
         <div className="services__grid">
           {services.map((s) => {

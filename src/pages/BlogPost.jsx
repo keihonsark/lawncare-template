@@ -2,6 +2,7 @@ import { useParams, Link } from 'react-router-dom'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import blogPosts from '../data/blogPosts'
+import config from '../config'
 import './BlogPost.css'
 
 export default function BlogPost() {
@@ -35,7 +36,7 @@ export default function BlogPost() {
           <span className="bp-article__date">{post.date}</span>
         </div>
         <h1 className="bp-article__title">{post.title}</h1>
-        <p className="bp-article__author">By The Lawncare Bros Team</p>
+        <p className="bp-article__author">By {config.content.blogAuthor}</p>
 
         <div
           className="bp-article__body"

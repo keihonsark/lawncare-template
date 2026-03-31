@@ -61,10 +61,10 @@ function getGrade(score) {
 }
 
 function getSummary(score) {
-  if (score >= 90) return "Your lawn is in great shape! A regular maintenance plan will keep it looking pristine year-round. The Bros can help you stay on top of it."
+  if (score >= 90) return "Your lawn is in great shape! A regular maintenance plan will keep it looking pristine year-round. We can help you stay on top of it."
   if (score >= 75) return "Your lawn is looking solid with just a few areas that need attention. A professional tune-up and consistent maintenance will get you to that next level."
   if (score >= 60) return "Your lawn has some issues that are worth addressing before they get worse. The good news — everything we see here is fixable with the right care plan."
-  if (score >= 40) return "Your lawn needs some serious TLC. Between bare patches, weeds, and inconsistent watering, there's a lot of room for improvement. Let the Bros put together a recovery plan."
+  if (score >= 40) return "Your lawn needs some serious TLC. Between bare patches, weeds, and inconsistent watering, there's a lot of room for improvement. Let us put together a recovery plan."
   return "Your lawn is in rough shape, but don't worry — we've brought lawns back from worse. A full assessment and custom recovery plan is the first step to turning things around."
 }
 
@@ -191,7 +191,7 @@ export default function LawnHealthQuiz() {
               </div>
               <div className="quiz-lead__field">
                 <label>Phone Number *</label>
-                <input type="tel" value={phone} onChange={(e) => setPhone(e.target.value)} placeholder="(559) 000-0000" required />
+                <input type="tel" value={phone} onChange={(e) => setPhone(e.target.value)} placeholder="(555) 000-0000" required />
               </div>
               <div className="quiz-lead__field">
                 <label>Email (optional)</label>

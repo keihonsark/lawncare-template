@@ -6,7 +6,7 @@ export default function BlogPreview() {
   return (
     <section className="blog-preview fade-up">
       <div className="container">
-        <p className="blog-preview__eyebrow">From The Bros</p>
+        <p className="blog-preview__eyebrow">From The Team</p>
         <h2 className="blog-preview__heading sh__heading">
           Lawn Care <span className="sh__outline">Tips</span> & Updates
         </h2>

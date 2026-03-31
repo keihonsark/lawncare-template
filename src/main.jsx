@@ -2,6 +2,7 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import './index.css'
+import config from './config'
 import Home from './pages/Home'
 import Estimate from './pages/Estimate'
 import Blog from './pages/Blog'
@@ -16,6 +17,9 @@ import LawnEstimator from './pages/LawnEstimator'
 import LawnHealthQuiz from './pages/LawnHealthQuiz'
 import FloatingCallButton from './components/FloatingCallButton'
 import ChatWidget from './components/ChatWidget'
+
+document.title = config.seo.title
+document.querySelector('meta[name="description"]')?.setAttribute('content', config.seo.description)
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>

@@ -1,4 +1,8 @@
+import config from '../config'
 import './Footer.css'
+
+const { name, phone, phoneTel, address, hoursShort, clientPortalUrl, adminUrl } = config.business
+const { footer } = config.content
 
 export default function Footer() {
   return (
@@ -6,11 +10,10 @@ export default function Footer() {
       <div className="container footer__grid">
         <div className="footer__brand">
           <div className="footer__logo">
-            <img src="/lawncare-bros-logo.png" alt="The Lawncare Bros LLC" style={{ width: 140, height: 'auto', objectFit: 'contain', filter: 'brightness(1.2) drop-shadow(0 2px 8px rgba(0,0,0,0.5))', marginBottom: '1rem' }} />
+            <img src="/lawncare-bros-logo.png" alt={name} style={{ width: 140, height: 'auto', objectFit: 'contain', filter: 'brightness(1.2) drop-shadow(0 2px 8px rgba(0,0,0,0.5))', marginBottom: '1rem' }} />
           </div>
           <p className="footer__desc">
-            Professional lawn care, landscaping, and irrigation services trusted
-            by Fresno and Clovis homeowners.
+            {footer.tagline}
           </p>
         </div>
 
@@ -29,23 +32,23 @@ export default function Footer() {
         <div className="footer__col">
           <h4>Contact</h4>
           <ul>
-            <li><a href="tel:5594583592">(559) 458-3592</a></li>
-            <li>Fresno & Clovis, CA</li>
-            <li>Mon – Sun: 6AM – 9PM</li>
+            <li><a href={`tel:${phoneTel}`}>{phone}</a></li>
+            <li>{address}</li>
+            <li>{hoursShort}</li>
           </ul>
         </div>
 
         <div className="footer__col">
           <h4>Existing Clients</h4>
           <ul>
-            <li><a href="https://lawncarebros.base44.app/client-portal" target="_blank" rel="noopener noreferrer">Client Login →</a></li>
+            <li><a href={clientPortalUrl} target="_blank" rel="noopener noreferrer">Client Login →</a></li>
           </ul>
         </div>
       </div>
 
       <div className="footer__bottom">
         <div className="container footer__bottom-inner">
-          <p>&copy; 2025 The Lawncare Bros LLC &middot; Fresno, CA</p>
+          <p>&copy; 2025 {name} &middot; {address}</p>
           <p className="footer__sark">
             Site by{' '}
             <a href="https://sark.agency" target="_blank" rel="noopener noreferrer" className="footer__sark-link">
@@ -59,7 +62,7 @@ export default function Footer() {
       </div>
       <div className="footer__admin">
         <div className="container">
-          <a href="https://lawncarebros.base44.app/" target="_blank" rel="noopener noreferrer">Admin Login</a>
+          <a href={adminUrl} target="_blank" rel="noopener noreferrer">Admin Login</a>
         </div>
       </div>
     </footer>

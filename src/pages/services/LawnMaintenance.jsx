@@ -4,6 +4,7 @@ import Navbar from '../../components/Navbar'
 import Footer from '../../components/Footer'
 import useFadeUp from '../../hooks/useFadeUp'
 import './ServicePage.css'
+import config from '../../config'
 
 const included = [
   'Mowing & edging',
@@ -40,16 +41,7 @@ const faqs = [
   },
 ]
 
-const reviews = [
-  {
-    name: 'Brian R.',
-    text: 'The Lawncare Bros come weekly and I cannot express how satisfied I always am. Always show up on time, ask if any other services are needed, and keep my lawn looking fabulous with those stripes.',
-  },
-  {
-    name: 'Emiliano A.',
-    text: 'Absolutely top-notch! Professional, reliable, and extremely detail-oriented. Clean edges, perfect mowing lines, and thoughtful touches that make the yard look incredible.',
-  },
-]
+const reviews = config.google.reviews.slice(0, 2)
 
 function Stars() {
   return (
@@ -75,7 +67,7 @@ export default function LawnMaintenance() {
         <img src="/08_lawn_maintenance.png" alt="" className="sp-hero__img" />
         <div className="sp-hero__overlay" />
         <div className="container sp-hero__content">
-          <h1 className="sp-hero__title">Professional Lawn Maintenance in Fresno & Clovis</h1>
+          <h1 className="sp-hero__title">{`Professional Lawn Maintenance in ${config.business.address.replace(', ' + config.business.state, '')}`}</h1>
           <p className="sp-hero__sub">Weekly and bi-weekly plans that keep your lawn sharp all season long.</p>
           <Link to="/estimate" className="sp-hero__btn">Get a Free Estimate</Link>
         </div>
@@ -101,7 +93,7 @@ export default function LawnMaintenance() {
 
       <section className="sp-why">
         <div className="container">
-          <h2 className="sp-why__title">Why Choose The Bros</h2>
+          <h2 className="sp-why__title">{config.content.servicePages.whyTitle}</h2>
           <div className="sp-why__grid">
             <div className="sp-why__card sp-why__card--google">
               <svg width="32" height="32" viewBox="0 0 24 24" fill="none">
@@ -173,9 +165,9 @@ export default function LawnMaintenance() {
 
       <section className="sp-cta">
         <div className="container">
-          <h2 className="sp-cta__title">Ready to Get Started?</h2>
-          <p className="sp-cta__sub">Call or text the Bros today for a free on-site estimate.</p>
-          <a href="tel:5594583592" className="sp-cta__btn">Call (559) 458-3592</a>
+          <h2 className="sp-cta__title">{config.content.servicePages.ctaTitle}</h2>
+          <p className="sp-cta__sub">{config.content.servicePages.ctaSub}</p>
+          <a href={`tel:${config.business.phoneTel}`} className="sp-cta__btn">Call {config.business.phone}</a>
         </div>
       </section>
 

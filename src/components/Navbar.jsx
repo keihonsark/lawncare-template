@@ -1,6 +1,9 @@
 import { useState, useEffect, useRef } from 'react'
 import { Link } from 'react-router-dom'
+import config from '../config'
 import './Navbar.css'
+
+const { phone, phoneTel, name, clientPortalUrl } = config.business
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false)
@@ -36,7 +39,7 @@ export default function Navbar() {
     <nav className={`nav ${scrolled ? 'nav--scrolled' : ''}`}>
       <div className="container nav__inner">
         <Link to="/" className="nav__logo">
-          <img src="/lawncare-bros-logo.png" alt="The Lawncare Bros LLC" style={{ height: 48, width: 'auto', objectFit: 'contain' }} />
+          <img src="/lawncare-bros-logo.png" alt={name} style={{ height: 48, width: 'auto', objectFit: 'contain' }} />
         </Link>
 
         <button
@@ -87,16 +90,16 @@ export default function Navbar() {
             <li><a href="#areas" onClick={() => setOpen(false)}>Areas</a></li>
             <li><a href="#contact" onClick={() => setOpen(false)}>Contact</a></li>
           </ul>
-          <a href="https://lawncarebros.base44.app/client-portal" target="_blank" rel="noopener noreferrer" className="nav__portal" onClick={() => setOpen(false)}>
+          <a href={clientPortalUrl} target="_blank" rel="noopener noreferrer" className="nav__portal" onClick={() => setOpen(false)}>
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>
             Client Portal
           </a>
           <Link to="/estimate" className="nav__estimate" onClick={() => setOpen(false)}>
             Get Instant Estimate
           </Link>
-          <a href="tel:5594583592" className="nav__phone">
+          <a href={`tel:${phoneTel}`} className="nav__phone">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
-            (559) 458-3592
+            {phone}
           </a>
         </div>
       </div>

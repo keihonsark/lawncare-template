@@ -1,4 +1,8 @@
+import config from '../config'
 import './TrustBadges.css'
+
+const { trustBadges } = config.content
+const { facebookHandle } = config.business
 
 const badges = [
   {
@@ -10,8 +14,8 @@ const badges = [
         <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/>
       </svg>
     ),
-    title: '5.0 ★★★★★',
-    sub: '7 Reviews on Google',
+    title: trustBadges.google.title,
+    sub: `${config.google.reviewCount} Reviews on Google`,
   },
   {
     icon: (
@@ -20,8 +24,8 @@ const badges = [
         <path d="M16.5 12.5h-2.5v7h-3v-7h-2v-2.5h2v-1.5c0-2.2 1-3.5 3.5-3.5h2v2.5h-1.5c-.8 0-1 .3-1 1v1.5h2.5l-.5 2.5z" fill="#fff"/>
       </svg>
     ),
-    title: 'Active on Facebook',
-    sub: 'thelawncarebrosllc',
+    title: trustBadges.facebook.title,
+    sub: facebookHandle,
   },
   {
     icon: (
@@ -30,8 +34,8 @@ const badges = [
         <path d="M9 12l2 2 4-4" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
       </svg>
     ),
-    title: 'Licensed · Insured · Bonded',
-    sub: 'Verified LLC',
+    title: trustBadges.licensed.title,
+    sub: trustBadges.licensed.sub,
   },
   {
     icon: (
@@ -39,8 +43,8 @@ const badges = [
         <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z" fill="#4caf6e"/>
       </svg>
     ),
-    title: 'Se Habla Español',
-    sub: 'English & Spanish Service',
+    title: trustBadges.bilingual.title,
+    sub: trustBadges.bilingual.sub,
   },
 ]
 

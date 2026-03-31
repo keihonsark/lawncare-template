@@ -1,12 +1,7 @@
+import config from '../config'
 import './About.css'
 
-const checks = [
-  'Licensed, Insured & Bonded',
-  'Brother-Owned Family Business',
-  'Weekly & Bi-Weekly Plans',
-  'Free On-Site Estimates',
-  'Bilingual Service (English & Spanish)',
-]
+const { about } = config.content
 
 export default function About() {
   return (
@@ -39,21 +34,17 @@ export default function About() {
 
         <div className="about__content">
           <div className="about__nextdoor-badge">
-            <span>⭐ Top-Rated on Google &amp; Facebook</span>
+            <span>⭐ {about.badge}</span>
           </div>
-          <p className="about__eyebrow">About The Lawncare Bros</p>
-          <h2 className="about__heading sh__heading" style={{ fontWeight: 800 }}>Two <span style={{ color: '#4caf6e' }}>Brothers.</span> One <span style={{ color: '#4caf6e' }}>Mission.</span> 💪</h2>
+          <p className="about__eyebrow">{about.eyebrow}</p>
+          <h2 className="about__heading sh__heading" style={{ fontWeight: 800 }}>{about.headline.replace(about.headlineAccent, '').trim()} <span style={{ color: '#4caf6e' }}>{about.headlineAccent}.</span> 💪</h2>
           <div className="sh__line sh--left" style={{ margin: '0 0 0.75rem 0' }} />
           <p className="about__text">
-            The Lawncare Bros LLC is a family business built on hard work, loyalty,
-            and pride in every yard we touch. As a licensed, insured, and bonded LLC,
-            we bring professional-grade results to homeowners across Fresno and Clovis.
-            From routine mowing to full landscape transformations — we treat every
-            property like it's our own.
+            {about.body}
           </p>
 
           <ul className="about__checks">
-            {checks.map((item) => (
+            {about.bullets.map((item) => (
               <li key={item}>
                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
                   <circle cx="10" cy="10" r="10" fill="var(--green-light)" fillOpacity="0.25" />

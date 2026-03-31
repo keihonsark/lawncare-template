@@ -1,0 +1,95 @@
+const config = {
+  business: {
+    name: "The Lawncare Bros LLC",
+    shortName: "The Lawncare Bros",
+    tagline: "Fresno's brother-owned lawn and landscaping crew. Weekly maintenance, sod installs, irrigation, and more — done right every time.",
+    phone: "(559) 458-3592",
+    phoneTel: "5594583592",
+    email: "",
+    address: "Fresno & Clovis, CA",
+    city: "Fresno",
+    state: "CA",
+    region: "Central Valley",
+    serviceAreas: ["Fresno", "Clovis", "Sanger", "Madera", "Selma", "Reedley", "Kerman", "And More"],
+    hours: "Mon – Sun: 6:00 AM – 9:00 PM",
+    hoursShort: "Mon – Sun: 6AM – 9PM",
+    founded: "2015",
+    ownerName: "The Bros",
+    successMessage: "The Bros will call you within a few hours!",
+    clientPortalUrl: "https://lawncarebros.base44.app/client-portal",
+    adminUrl: "https://lawncarebros.base44.app/",
+    formspreeId: "xpqodbdv",
+    facebookHandle: "thelawncarebrosllc",
+  },
+  google: {
+    placeId: "",
+    mapsUrl: "",
+    rating: 5.0,
+    reviewCount: 7,
+    reviews: [
+      { name: "Brian R.", text: "They come weekly and I cannot express how satisfied I always am. Always show up on time, ask if any other services are needed, and keep my lawn looking fabulous with those stripes." },
+      { name: "Abraham A.", text: "I've been using them for about a year and I can't get over how great these young men do!! Very professional, always on time. I really recommend them to everyone — you will be 100% satisfied!" },
+      { name: "Jose F.", text: "They never fail to amaze me. Sharp edges, cleanly trimmed bushes, freshly cut grass — their services are delivered in a top of the line manner." },
+      { name: "Emiliano A.", text: "Absolutely top-notch! Professional, reliable, and extremely detail-oriented. Clean edges, perfect mowing lines, and thoughtful touches that make the yard look incredible." },
+      { name: "Jose C.", text: "Very professional workers, on time and always very respectful. Amazing quality work." },
+      { name: "Irvin S.", text: "I spotted these guys and asked for a quote — extremely professional and provided excellent service. Highly recommend!" },
+      { name: "Messiah O.", text: "Very professional, always make sure to leave my yard looking clean and sharp." },
+    ],
+  },
+  content: {
+    about: {
+      badge: "Top-Rated on Google & Facebook",
+      eyebrow: "About Us",
+      headline: "Your Local Lawn Care Experts",
+      headlineAccent: "Experts",
+      body: "We are a locally owned and operated lawn care company built on hard work, loyalty, and pride in every yard we touch. As a licensed, insured, and bonded business, we bring professional-grade results to homeowners across the area. From routine mowing to full landscape transformations — we treat every property like it's our own.",
+      bullets: [
+        "Licensed, Insured & Bonded",
+        "Locally Owned & Operated",
+        "Weekly & Bi-Weekly Plans",
+        "Free On-Site Estimates",
+        "Bilingual Service (English & Spanish)",
+      ],
+    },
+    hero: {
+      cyclingWords: ["Our Passion.", "Our Business.", "Our Craft.", "Perfected."],
+    },
+    cta: {
+      headline: "Ready to Transform Your Yard?",
+      subheadline: "Call or text us today for a free on-site estimate — no pressure, no obligation.",
+    },
+    trustBar: [
+      "Licensed, Insured & Bonded",
+      "Locally Owned",
+      "Free Estimates",
+      "Same-Week Service",
+      "Se Habla Español",
+    ],
+    trustBadges: {
+      google: { title: "5.0 ★★★★★", sub: "" },
+      facebook: { title: "Active on Facebook", sub: "" },
+      licensed: { title: "Licensed · Insured · Bonded", sub: "Verified" },
+      bilingual: { title: "Se Habla Español", sub: "English & Spanish Service" },
+    },
+    services: {
+      eyebrow: "What We Do",
+      headline: "Our Services",
+      subheadline: "Comprehensive lawn care and landscaping solutions for residential and commercial properties.",
+    },
+    footer: {
+      tagline: "Professional lawn care, landscaping, and irrigation services trusted by local homeowners.",
+    },
+    servicePages: {
+      whyTitle: "Why Choose Us",
+      ctaTitle: "Ready to Get Started?",
+      ctaSub: "Call or text us today for a free on-site estimate.",
+    },
+    blogAuthor: "The Team",
+  },
+  seo: {
+    title: "The Lawncare Bros LLC | Fresno & Clovis",
+    description: "Professional lawn care, landscaping, and irrigation services. Licensed, insured & bonded. Free estimates.",
+  },
+}
+
+export default config

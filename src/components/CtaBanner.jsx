@@ -1,4 +1,8 @@
+import config from '../config'
 import './CtaBanner.css'
+
+const { phone, phoneTel } = config.business
+const { cta } = config.content
 
 export default function CtaBanner() {
   return (
@@ -6,13 +10,13 @@ export default function CtaBanner() {
       <div className="cta__bg" />
       <div className="cta__overlay" />
       <div className="container cta__content fade-up">
-        <h2 className="cta__heading">Ready to Transform Your Yard?</h2>
+        <h2 className="cta__heading">{cta.headline}</h2>
         <p className="cta__sub">
-          Call or text the Bros today for a free on-site estimate — no pressure, no obligation.
+          {cta.subheadline}
         </p>
         <div className="cta__actions">
-          <a href="tel:5594583592" className="cta__btn cta__btn--call">
-            Call (559) 458-3592
+          <a href={`tel:${phoneTel}`} className="cta__btn cta__btn--call">
+            Call {phone}
           </a>
           <a href="#contact" className="cta__btn cta__btn--email">
             Send a Message →

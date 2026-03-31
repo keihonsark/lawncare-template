@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from 'react'
 import { Link } from 'react-router-dom'
+import config from '../config'
 import './Estimate.css'
 
 const SERVICES = [
@@ -258,7 +259,7 @@ export default function Estimate() {
             </div>
             <h2 className="est-success__title">Estimate Sent!</h2>
             <p className="est-success__text">
-              The Bros will reach out within a few hours!
+              {config.business.successMessage}
             </p>
             <p className="est-success__sub">
               Your estimated range: <strong>${formatPrice(totalLow)} – ${formatPrice(totalHigh)}</strong>
@@ -306,7 +307,7 @@ export default function Estimate() {
       {/* Card */}
       <div className="est-body">
         <div className="est-card">
-          <img src="/lawncare-bros-logo.png" alt="The Lawncare Bros LLC" className="est-card__logo" />
+          <img src="/lawncare-bros-logo.png" alt={config.business.name} className="est-card__logo" />
           <h2 className="est-card__title">{STEP_TITLES[step - 1]}</h2>
 
           {/* STEP 1 */}
@@ -324,7 +325,7 @@ export default function Estimate() {
               </div>
               <div className="est-field">
                 <label>Phone Number *</label>
-                <input type="tel" value={phone} onChange={(e) => setPhone(e.target.value)} placeholder="(559) 000-0000" required />
+                <input type="tel" value={phone} onChange={(e) => setPhone(e.target.value)} placeholder="(555) 000-0000" required />
               </div>
               <div className="est-row">
                 <div className="est-field">
@@ -503,7 +504,7 @@ export default function Estimate() {
               </div>
 
               <p className="est-disclaimer">
-                This is an estimated range. The Bros will confirm exact pricing
+                This is an estimated range. We will confirm exact pricing
                 during your free on-site visit — no obligation.
               </p>
             </div>

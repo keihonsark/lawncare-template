@@ -1,5 +1,8 @@
 import { useState } from 'react'
+import config from '../config'
 import './Contact.css'
+
+const { phone, phoneTel, hours, formspreeId, successMessage } = config.business
 
 export default function Contact() {
   const [submitted, setSubmitted] = useState(false)
@@ -8,7 +11,7 @@ export default function Contact() {
     e.preventDefault()
     const form = e.target
     try {
-      await fetch('https://formspree.io/f/xpqodbdv', {
+      await fetch(`https://formspree.io/f/${formspreeId}`, {
         method: 'POST',
         body: new FormData(form),
         headers: { Accept: 'application/json' },
@@ -38,7 +41,7 @@ export default function Contact() {
               </div>
               <div>
                 <p className="contact__detail-label">Phone</p>
-                <a href="tel:5594583592" className="contact__detail-value">(559) 458-3592</a>
+                <a href={`tel:${phoneTel}`} className="contact__detail-value">{phone}</a>
               </div>
             </div>
 
@@ -48,7 +51,7 @@ export default function Contact() {
               </div>
               <div>
                 <p className="contact__detail-label">Hours</p>
-                <p className="contact__detail-value">Mon – Sun: 6:00 AM – 9:00 PM</p>
+                <p className="contact__detail-value">{hours}</p>
               </div>
             </div>
           </div>
@@ -61,7 +64,7 @@ export default function Contact() {
               <path d="M20 34l8 8 16-18" stroke="#1a7a3c" strokeWidth="3.5" strokeLinecap="round" strokeLinejoin="round" fill="none" />
             </svg>
             <h3>Message Sent!</h3>
-            <p>The Bros will call you within a few hours!</p>
+            <p>{successMessage}</p>
           </div>
         ) : (
           <form

@@ -4,6 +4,7 @@ import Navbar from '../../components/Navbar'
 import Footer from '../../components/Footer'
 import useFadeUp from '../../hooks/useFadeUp'
 import './ServicePage.css'
+import config from '../../config'
 
 const included = [
   'Tree trimming & thinning',
@@ -36,20 +37,11 @@ const faqs = [
   },
   {
     q: 'Are you insured for tree work?',
-    a: 'Absolutely. The Lawncare Bros LLC is fully licensed, insured, and bonded. Tree work involves real risk, and we carry full liability coverage to protect your property and our crew.',
+    a: `Absolutely. ${config.business.name} is fully licensed, insured, and bonded. Tree work involves real risk, and we carry full liability coverage to protect your property and our crew.`,
   },
 ]
 
-const reviews = [
-  {
-    name: 'Jose F.',
-    text: 'The Lawncare Bros never fail to amaze me. Sharp edges, cleanly trimmed bushes, freshly cut grass — their services are delivered in a top of the line manner.',
-  },
-  {
-    name: 'Jose C.',
-    text: 'Very professional workers, on time and always very respectful. Amazing quality work.',
-  },
-]
+const reviews = config.google.reviews.slice(2, 4)
 
 function Stars() {
   return (
@@ -75,7 +67,7 @@ export default function TreeServices() {
         <img src="/07_tree_service.png" alt="" className="sp-hero__img" />
         <div className="sp-hero__overlay" />
         <div className="container sp-hero__content">
-          <h1 className="sp-hero__title">Tree Trimming & Stump Removal in Fresno & Clovis</h1>
+          <h1 className="sp-hero__title">{`Tree Trimming & Stump Removal in ${config.business.address.replace(', ' + config.business.state, '')}`}</h1>
           <p className="sp-hero__sub">Keep your trees healthy and your property safe with professional tree care.</p>
           <Link to="/estimate" className="sp-hero__btn">Get a Free Estimate</Link>
         </div>
@@ -101,7 +93,7 @@ export default function TreeServices() {
 
       <section className="sp-why">
         <div className="container">
-          <h2 className="sp-why__title">Why Choose The Bros</h2>
+          <h2 className="sp-why__title">{config.content.servicePages.whyTitle}</h2>
           <div className="sp-why__grid">
             <div className="sp-why__card sp-why__card--google">
               <svg width="32" height="32" viewBox="0 0 24 24" fill="none">
@@ -173,9 +165,9 @@ export default function TreeServices() {
 
       <section className="sp-cta">
         <div className="container">
-          <h2 className="sp-cta__title">Ready to Get Started?</h2>
-          <p className="sp-cta__sub">Call or text the Bros today for a free on-site estimate.</p>
-          <a href="tel:5594583592" className="sp-cta__btn">Call (559) 458-3592</a>
+          <h2 className="sp-cta__title">{config.content.servicePages.ctaTitle}</h2>
+          <p className="sp-cta__sub">{config.content.servicePages.ctaSub}</p>
+          <a href={`tel:${config.business.phoneTel}`} className="sp-cta__btn">Call {config.business.phone}</a>
         </div>
       </section>
 

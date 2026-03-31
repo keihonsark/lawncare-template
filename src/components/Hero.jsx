@@ -1,8 +1,9 @@
 import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
+import config from '../config'
 import './Hero.css'
 
-const words = ['Our Passion.', 'Our Business.', 'Our Craft.', 'Perfected.']
+const words = config.content.hero.cyclingWords
 
 export default function Hero() {
   const [index, setIndex] = useState(0)
@@ -32,7 +33,7 @@ export default function Hero() {
       <div className="container hero__content">
         <img
           src="/lawncare-bros-logo.png"
-          alt="The Lawncare Bros LLC"
+          alt={config.business.name}
           className="hero__logo"
         />
 
@@ -44,8 +45,7 @@ export default function Hero() {
         </h1>
 
         <p className="hero__sub">
-          Fresno's brother-owned lawn and landscaping crew. Weekly maintenance,
-          sod installs, irrigation, and more — done right every time.
+          {config.business.tagline}
         </p>
 
         <div className="hero__buttons">
