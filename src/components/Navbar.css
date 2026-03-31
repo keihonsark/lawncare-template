@@ -197,6 +197,15 @@
   background: #f0fdf4;
 }
 
+.nav__dropdown-highlight {
+  border-top: 1px solid #eee;
+  margin-top: 0.25rem;
+  padding-top: 0.7rem !important;
+  color: #1a7a3c !important;
+  -webkit-text-fill-color: #1a7a3c !important;
+  font-weight: 600 !important;
+}
+
 /* Hamburger */
 .nav__hamburger {
   display: none;

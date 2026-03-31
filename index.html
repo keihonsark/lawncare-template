@@ -8,9 +8,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <script>
+      window.__gmapsReady = false;
+      window.initMap = function() { window.__gmapsReady = true; };
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCdI5n377gDAvipr_-zkX53pmOK9oieDoU&libraries=places,drawing,geometry&v=weekly&callback=initMap"></script>
   </head>
   <body>
     <div id="root"></div>

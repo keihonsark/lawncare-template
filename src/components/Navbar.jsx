@@ -77,6 +77,7 @@ export default function Navbar() {
                   <Link to="/services/mulch-river-rock" onClick={() => { setSvcOpen(false); setOpen(false) }}>Mulch & River Rock</Link>
                   <Link to="/services/tree-services" onClick={() => { setSvcOpen(false); setOpen(false) }}>Tree Services</Link>
                   <Link to="/services/landscaping-hardscape" onClick={() => { setSvcOpen(false); setOpen(false) }}>Landscaping & Hardscape</Link>
+                  <Link to="/lawn-estimator" onClick={() => { setSvcOpen(false); setOpen(false) }} className="nav__dropdown-highlight">Lawn Estimator</Link>
                 </div>
               )}
             </li>

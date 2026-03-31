@@ -5,6 +5,7 @@ import About from '../components/About'
 import StatsCounter from '../components/StatsCounter'
 import Services from '../components/Services'
 import AllServices from '../components/AllServices'
+import EstimatorBanner from '../components/EstimatorBanner'
 import PhotoStrip from '../components/PhotoStrip'
 import Reviews from '../components/Reviews'
 import TrustBadges from '../components/TrustBadges'
@@ -27,6 +28,7 @@ export default function Home() {
       <StatsCounter />
       <Services />
       <AllServices />
+      <EstimatorBanner />
       <PhotoStrip />
       <Reviews />
       <TrustBadges />
