@@ -24,7 +24,8 @@
       "Read(//c/Users/SS/Desktop/lawncare-bros/$LOCALAPPDATA/**)",
       "Read(//c/Users/SS/Desktop/lawncare-bros/$HOME/scoop/shims/**)",
       "Bash(npm list:*)",
-      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:5175/)"
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:5175/)",
+      "Bash(ls -la c:/Users/SS/Desktop/lawncare-bros/public/hero* c:/Users/SS/Desktop/lawncare-bros/public/Hero*)"
     ]
   }
 }

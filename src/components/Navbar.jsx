@@ -5,6 +5,7 @@ import './Navbar.css'
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false)
   const [open, setOpen] = useState(false)
+  const [svcOpen, setSvcOpen] = useState(false)
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 60)
@@ -45,7 +46,27 @@ export default function Navbar() {
             </svg>
           </button>
           <ul className="nav__links">
-            <li><a href="#services" onClick={() => setOpen(false)}>Services</a></li>
+            <li
+              className="nav__dropdown"
+              onMouseEnter={() => setSvcOpen(true)}
+              onMouseLeave={() => setSvcOpen(false)}
+            >
+              <button
+                className="nav__dropdown-toggle"
+                onClick={() => setSvcOpen(!svcOpen)}
+                type="button"
+              >
+                Services
+                <span className={`nav__chevron ${svcOpen ? 'nav__chevron--open' : ''}`}>▾</span>
+              </button>
+              {svcOpen && (
+                <div className="nav__dropdown-menu">
+                  <Link to="/services/lawn-maintenance" onClick={() => { setSvcOpen(false); setOpen(false) }}>Lawn Maintenance</Link>
+                  <Link to="/services/sod-installation" onClick={() => { setSvcOpen(false); setOpen(false) }}>Sod Installation</Link>
+                  <Link to="/services/tree-services" onClick={() => { setSvcOpen(false); setOpen(false) }}>Tree Services</Link>
+                </div>
+              )}
+            </li>
             <li><a href="#reviews" onClick={() => setOpen(false)}>Reviews</a></li>
             <li><Link to="/blog" onClick={() => setOpen(false)}>Blog</Link></li>
             <li><a href="#areas" onClick={() => setOpen(false)}>Areas</a></li>

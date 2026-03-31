@@ -29,7 +29,7 @@ const pricing = [
 const faqs = [
   {
     q: 'How often should trees be trimmed?',
-    a: 'Most trees benefit from trimming every 1–3 years depending on the species and growth rate. Fruit trees and fast-growing varieties may need annual trimming. We'll assess your trees and recommend the right schedule.',
+    a: "Most trees benefit from trimming every 1–3 years depending on the species and growth rate. Fruit trees and fast-growing varieties may need annual trimming. We'll assess your trees and recommend the right schedule.",
   },
   {
     q: 'Is stump grinding included with removal?',

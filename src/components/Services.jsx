@@ -22,21 +22,32 @@ export default function Services() {
           commercial properties across the Central Valley.
         </p>
         <div className="services__grid">
-          {services.map((s) => (
-            <div key={s.title} className="svc-card stagger-child">
-              <div className="svc-card__img">
-                <img src={s.img} alt={s.title} loading="lazy" />
+          {services.map((s) => {
+            const card = (
+              <>
+                <div className="svc-card__img">
+                  <img src={s.img} alt={s.title} loading="lazy" />
+                </div>
+                <div className="svc-card__body">
+                  <span className="svc-card__icon">{s.icon}</span>
+                  <h3>{s.title}</h3>
+                  <p>{s.desc}</p>
+                  {s.link && (
+                    <span className="svc-card__link">Learn More →</span>
+                  )}
+                </div>
+              </>
+            )
+            return s.link ? (
+              <Link to={s.link} key={s.title} className="svc-card stagger-child">
+                {card}
+              </Link>
+            ) : (
+              <div key={s.title} className="svc-card stagger-child">
+                {card}
               </div>
-              <div className="svc-card__body">
-                <span className="svc-card__icon">{s.icon}</span>
-                <h3>{s.title}</h3>
-                <p>{s.desc}</p>
-                {s.link && (
-                  <Link to={s.link} className="svc-card__link">Learn More →</Link>
-                )}
-              </div>
-            </div>
-          ))}
+            )
+          })}
         </div>
       </div>
     </section>
