@@ -1,16 +1,11 @@
-# React + Vite
+# lawncare-template
+SARK.agency master lawn care website template.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## How to use
+1. Duplicate this folder for each new client
+2. Rename the folder to the client name
+3. Copy .env.example to .env.local and add real API keys
+4. Find all instances of [...] placeholders and replace with client info
+5. Swap /logo-placeholder.png with real logo
+6. Update Formspree endpoint in contact form
+7. Push to new GitHub repo and deploy to Vercel

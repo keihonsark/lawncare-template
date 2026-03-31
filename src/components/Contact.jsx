@@ -11,7 +11,8 @@ export default function Contact() {
     e.preventDefault()
     const form = e.target
     try {
-      await fetch(`https://formspree.io/f/${formspreeId}`, {
+      /* TODO: Replace with client Formspree endpoint */
+      await fetch(formspreeId ? `https://formspree.io/f/${formspreeId}` : '#', {
         method: 'POST',
         body: new FormData(form),
         headers: { Accept: 'application/json' },

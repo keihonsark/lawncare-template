@@ -88,7 +88,7 @@
   animation: pinPulse 2s ease-in-out infinite;
 }
 
-/* Fresno text animated gradient + glow */
+/* City text animated gradient + glow */
 @keyframes fresnoGradient {
   0% { fill: #fff; }
   33% { fill: #00ff88; }

@@ -24,12 +24,12 @@ const process = [
 
 const faqs = [
   {
-    q: 'What type of mulch do you recommend for Fresno?',
-    a: "We typically recommend bark mulch or wood chips for most Fresno landscapes. They retain moisture well in the heat, suppress weeds, and break down slowly to feed the soil.",
+    q: 'What type of mulch do you recommend for [City]?',
+    a: "We typically recommend bark mulch or wood chips for most local landscapes. They retain moisture well in the heat, suppress weeds, and break down slowly to feed the soil.",
   },
   {
     q: 'How often should mulch be replaced?',
-    a: "In Fresno's climate, we recommend refreshing mulch once a year — usually in spring. River rock is more permanent and rarely needs replacement.",
+    a: "In our climate, we recommend refreshing mulch once a year — usually in spring. River rock is more permanent and rarely needs replacement.",
   },
   {
     q: 'Do you install weed barrier underneath?',

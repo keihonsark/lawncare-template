@@ -19,7 +19,7 @@ export default function About() {
             className="about__img-small"
           />
           <div className="about__badge about__badge--circle">
-            <span className="about__badge-num">10+</span>
+            <span className="about__badge-num">[X]+</span>
             <span className="about__badge-text">Years of Experience</span>
           </div>
         </div>
@@ -28,7 +28,7 @@ export default function About() {
         <div className="about__mobile-img">
           <img src="/hero-image.png" alt="Beautiful lawn" />
           <div className="about__badge about__badge--pill">
-            10+ Years of Experience
+            [X]+ Years of Experience
           </div>
         </div>
 

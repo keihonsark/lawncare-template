@@ -225,7 +225,8 @@ export default function Estimate() {
     }
 
     try {
-      await fetch('https://formspree.io/f/xpqodbdv', {
+      /* TODO: Replace with client Formspree endpoint */
+      await fetch(config.business.formspreeId ? `https://formspree.io/f/${config.business.formspreeId}` : '#', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
         body: JSON.stringify(body),
@@ -307,7 +308,7 @@ export default function Estimate() {
       {/* Card */}
       <div className="est-body">
         <div className="est-card">
-          <img src="/lawncare-bros-logo.png" alt={config.business.name} className="est-card__logo" />
+          <img src="/logo-placeholder.png" alt={config.business.name} className="est-card__logo" />
           <h2 className="est-card__title">{STEP_TITLES[step - 1]}</h2>
 
           {/* STEP 1 */}
@@ -334,7 +335,7 @@ export default function Estimate() {
                 </div>
                 <div className="est-field">
                   <label>City</label>
-                  <input type="text" value={city} onChange={(e) => setCity(e.target.value)} placeholder="Fresno" />
+                  <input type="text" value={city} onChange={(e) => setCity(e.target.value)} placeholder="Your city" />
                 </div>
               </div>
             </div>

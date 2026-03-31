@@ -24,7 +24,7 @@ const process = [
 
 const faqs = [
   {
-    q: 'How often should I mow in Fresno?',
+    q: 'How often should I mow in [City]?',
     a: 'During spring and summer, we recommend weekly mowing to keep your lawn healthy. In fall you can stretch to every 10–14 days, and winter is usually monthly.',
   },
   {

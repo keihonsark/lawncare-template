@@ -1,7 +1,7 @@
 import config from '../config'
 import './Footer.css'
 
-const { name, phone, phoneTel, address, hoursShort, clientPortalUrl, adminUrl } = config.business
+const { name, phone, phoneTel, address, hoursShort } = config.business
 const { footer } = config.content
 
 export default function Footer() {
@@ -10,7 +10,7 @@ export default function Footer() {
       <div className="container footer__grid">
         <div className="footer__brand">
           <div className="footer__logo">
-            <img src="/lawncare-bros-logo.png" alt={name} style={{ width: 140, height: 'auto', objectFit: 'contain', filter: 'brightness(1.2) drop-shadow(0 2px 8px rgba(0,0,0,0.5))', marginBottom: '1rem' }} />
+            <img src="/logo-placeholder.png" alt={name} style={{ width: 140, height: 'auto', objectFit: 'contain', filter: 'brightness(1.2) drop-shadow(0 2px 8px rgba(0,0,0,0.5))', marginBottom: '1rem' }} />
           </div>
           <p className="footer__desc">
             {footer.tagline}
@@ -38,12 +38,6 @@ export default function Footer() {
           </ul>
         </div>
 
-        <div className="footer__col">
-          <h4>Existing Clients</h4>
-          <ul>
-            <li><a href={clientPortalUrl} target="_blank" rel="noopener noreferrer">Client Login →</a></li>
-          </ul>
-        </div>
       </div>
 
       <div className="footer__bottom">
@@ -58,11 +52,6 @@ export default function Footer() {
               </svg>
             </a>
           </p>
-        </div>
-      </div>
-      <div className="footer__admin">
-        <div className="container">
-          <a href={adminUrl} target="_blank" rel="noopener noreferrer">Admin Login</a>
         </div>
       </div>
     </footer>

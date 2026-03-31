@@ -28,8 +28,8 @@ const faqs = [
     a: 'We recommend staying off new sod for at least 2–3 weeks to allow the roots to establish. Light foot traffic is fine after that, but avoid heavy use for about 4–6 weeks.',
   },
   {
-    q: 'What type of sod works best in Fresno?',
-    a: 'Bermuda grass is the most popular choice for Fresno — it thrives in heat and handles heavy sun. Tall Fescue is another option for partially shaded yards. We help you choose the best variety for your property.',
+    q: 'What type of sod works best in [City]?',
+    a: 'Bermuda grass is a popular choice for warm climates — it thrives in heat and handles heavy sun. Tall Fescue is another option for partially shaded yards. We help you choose the best variety for your property.',
   },
   {
     q: 'Do you remove old grass first?',

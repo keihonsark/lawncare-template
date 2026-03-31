@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from 'react'
 import { Link } from 'react-router-dom'
+import config from '../config'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import './LawnHealthQuiz.css'
@@ -125,7 +126,8 @@ export default function LawnHealthQuiz() {
     if (!phone.trim()) return
     setSubmitting(true)
     try {
-      await fetch('https://formspree.io/f/xpqodbdv', {
+      /* TODO: Replace with client Formspree endpoint */
+      await fetch(config.business.formspreeId ? `https://formspree.io/f/${config.business.formspreeId}` : '#', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
         body: JSON.stringify({

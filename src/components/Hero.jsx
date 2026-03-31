@@ -32,7 +32,7 @@ export default function Hero() {
 
       <div className="container hero__content">
         <img
-          src="/lawncare-bros-logo.png"
+          src="/logo-placeholder.png"
           alt={config.business.name}
           className="hero__logo"
         />
