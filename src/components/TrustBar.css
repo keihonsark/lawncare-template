@@ -37,12 +37,18 @@
 
 @media (max-width: 768px) {
   .trust__grid {
-    grid-template-columns: 1fr;
-    gap: 0.85rem;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
   }
 
   .trust__item {
     justify-content: flex-start;
-    padding-left: 1rem;
+    padding: 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  .trust__item:last-child {
+    grid-column: 1 / -1;
+    justify-content: center;
   }
 }
