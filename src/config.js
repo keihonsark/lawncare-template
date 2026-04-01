@@ -16,6 +16,7 @@ const config = {
     hours: "Mon \u2013 Sun: 6:00 AM \u2013 9:00 PM",
     hoursShort: "Mon \u2013 Sun: 6AM \u2013 9PM",
     founded: "2020",
+    yearsExperience: 10,
     ownerName: "John Smith",
     license: "Lic # 0000000",
     successMessage: "We'll be in touch within a few hours!",
@@ -45,7 +46,6 @@ const config = {
         "Locally Owned & Operated",
         "Weekly & Bi-Weekly Plans",
         "Free On-Site Estimates",
-        "Hablamos Espa\u00f1ol",
       ],
     },
     hero: {
@@ -60,13 +60,11 @@ const config = {
       "Locally Owned & Operated",
       "Free Estimates",
       "Anytown & Surrounding Areas",
-      "Hablamos Espa\u00f1ol",
     ],
     trustBadges: {
       google: { title: "5.0 \u2605\u2605\u2605\u2605\u2605", sub: "" },
       facebook: { title: "Active on Facebook", sub: "" },
       licensed: { title: "Lic # 0000000", sub: "Licensed \u00b7 Insured \u00b7 Bonded" },
-      bilingual: { title: "Hablamos Espa\u00f1ol", sub: "English & Spanish Service" },
     },
     services: {
       eyebrow: "What We Do",
@@ -74,7 +72,6 @@ const config = {
       subheadline: "Professional lawn care and landscaping solutions for residential and commercial properties in Anytown and the Central Valley.",
     },
     footer: {
-      tagline: "Professional lawn care and landscaping trusted by Anytown homeowners. Hablamos Espa\u00f1ol.",
     },
     servicePages: {
       whyTitle: "Why Choose Us",
@@ -85,7 +82,6 @@ const config = {
   },
   seo: {
     title: "Green Valley Lawn Care | Anytown, ST",
-    description: "Professional lawn care, landscaping, and tree services in Anytown, ST. Licensed, insured & bonded. Hablamos Espa\u00f1ol. Free estimates. Call (555) 123-4567.",
   },
 }
 

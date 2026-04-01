@@ -39,8 +39,8 @@ function CountUp({ end, suffix = '', duration = 1600 }) {
   )
 }
 
-const { reviewCount, founded } = config.business
-const yearsExp = new Date().getFullYear() - parseInt(founded) || 5
+const { reviewCount, yearsExperience } = config.business
+const yearsExp = yearsExperience || 10
 
 export default function StatsCounter() {
   return (
