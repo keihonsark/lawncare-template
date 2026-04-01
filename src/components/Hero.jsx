@@ -33,7 +33,6 @@ export default function Hero() {
       <div className="container hero__content">
         <div className="hero__logo">
           <span className="hero__logo-line1">{config.business.shortName}</span>
-          <span className="hero__logo-line2">Lawn Care</span>
         </div>
 
         <h1 className="hero__title">
