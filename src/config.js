@@ -62,10 +62,10 @@ const config = {
       "Anytown & Surrounding Areas",
     ],
     trustBadges: {
-      google: { title: "5.0 \u2605\u2605\u2605\u2605\u2605", sub: "" },
-      facebook: { title: "Active on Facebook", sub: "" },
-      licensed: { title: "Lic # 0000000", sub: "Licensed \u00b7 Insured \u00b7 Bonded" },
-      satisfaction: { title: "Satisfaction Guaranteed", sub: "Your Yard, Our Priority" },
+      google: { title: "5.0 \u2605\u2605\u2605\u2605\u2605" },
+      facebook: { title: "Active on Facebook" },
+      licensed: { title: "Licensed & Insured" },
+      satisfaction: { title: "Satisfaction Guaranteed" },
     },
     services: {
       eyebrow: "What We Do",
