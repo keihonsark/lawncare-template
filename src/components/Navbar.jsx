@@ -1,15 +1,17 @@
 import { useState, useEffect, useRef } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useLocation, useNavigate } from 'react-router-dom'
 import config from '../config'
 import './Navbar.css'
 
 const { phone, phoneTel, name } = config.business
 
-export default function Navbar() {
-  const [scrolled, setScrolled] = useState(false)
+export default function Navbar({ forceScrolled = false }) {
+  const [scrolled, setScrolled] = useState(forceScrolled)
   const [open, setOpen] = useState(false)
   const [svcOpen, setSvcOpen] = useState(false)
   const svcTimeout = useRef(null)
+  const location = useLocation()
+  const navigate = useNavigate()
 
   const handleSvcEnter = () => {
     clearTimeout(svcTimeout.current)
@@ -21,7 +23,7 @@ export default function Navbar() {
   }
 
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 60)
+    const onScroll = () => setScrolled(forceScrolled || window.scrollY > 60)
     window.addEventListener('scroll', onScroll, { passive: true })
     return () => window.removeEventListener('scroll', onScroll)
   }, [])
@@ -87,7 +89,7 @@ export default function Navbar() {
             </li>
             <li><a href="#reviews" onClick={() => setOpen(false)}>Reviews</a></li>
             <li><Link to="/blog" onClick={() => setOpen(false)}>Blog</Link></li>
-            <li><a href="#areas" onClick={() => setOpen(false)}>Areas</a></li>
+            <li><a href="#areas" onClick={(e) => { setOpen(false); if (location.pathname !== '/') { e.preventDefault(); navigate('/'); setTimeout(() => { const el = document.getElementById('areas'); if (el) el.scrollIntoView({ behavior: 'smooth' }); }, 100); } }}>Areas</a></li>
             <li><a href="#contact" onClick={() => setOpen(false)}>Contact</a></li>
           </ul>
           <Link to="/estimate" className="nav__estimate" onClick={() => setOpen(false)}>

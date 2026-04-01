@@ -6,11 +6,21 @@
 
 /* Header */
 .est-header {
-  background: var(--black);
+  position: relative;
+  background: url('/sprinkler-golden-hour.png') center / cover no-repeat;
   padding: 1rem 0;
 }
 
+.est-header::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+
 .est-header__inner {
+  position: relative;
+  z-index: 1;
   display: flex;
   align-items: center;
 }

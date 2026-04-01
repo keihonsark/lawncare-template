@@ -150,7 +150,7 @@ export default function LawnHealthQuiz() {
 
   return (
     <>
-      <Navbar />
+      <Navbar forceScrolled />
 
       <div className="quiz-page">
         {/* Progress */}

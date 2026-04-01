@@ -463,6 +463,20 @@
   font-size: 0.9rem;
 }
 
+@keyframes gradientShift {
+  0% { background-position: 0% center; }
+  100% { background-position: 200% center; }
+}
+
+.sp-cta__accent {
+  background: linear-gradient(90deg, #1a7a3c, #4caf6e, #1a7a3c);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: gradientShift 3s linear infinite;
+}
+
 /* Bottom CTA */
 .sp-cta {
   padding: 5rem 0;

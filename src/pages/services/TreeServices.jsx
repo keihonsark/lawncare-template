@@ -132,7 +132,7 @@ export default function TreeServices() {
 
       <section className="sp-cta">
         <div className="container">
-          <h2 className="sp-cta__title">{config.content.servicePages.ctaTitle}</h2>
+          <h2 className="sp-cta__title">Ready to <span className="sp-cta__accent">Get Started?</span></h2>
           <p className="sp-cta__sub">{config.content.servicePages.ctaSub}</p>
           <a href={`tel:${config.business.phoneTel}`} className="sp-cta__btn">Call {config.business.phone}</a>
         </div>
