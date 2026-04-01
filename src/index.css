@@ -16,6 +16,30 @@
   box-sizing: border-box;
 }
 
+* {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+}
+
+img {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  pointer-events: none;
+}
+
+section, div {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+input, textarea, button, a {
+  -webkit-user-select: auto;
+  user-select: auto;
+  pointer-events: auto;
+}
+
 html,
 body {
   overflow-x: hidden;
