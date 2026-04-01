@@ -68,7 +68,7 @@ export default function IrrigationSystems() {
       <section className="sp-hero" style={{ backgroundImage: 'url(/sprinkler-golden-hour.png)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
         <div className="sp-hero__overlay" />
         <div className="container sp-hero__content">
-          <h1 className="sp-hero__title">{`Irrigation Systems in ${config.business.address.replace(', ' + config.business.state, '')}`}</h1>
+          <h1 className="sp-hero__title">Irrigation Systems</h1>
           <p className="sp-hero__sub">Sprinkler and drip system installation and repair for efficient, reliable watering.</p>
           <Link to="/estimate" className="sp-hero__btn">Get a Free Estimate</Link>
         </div>

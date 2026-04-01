@@ -68,7 +68,7 @@ export default function TreeServices() {
       <section className="sp-hero" style={{ backgroundImage: 'url(/hero-image.png)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
         <div className="sp-hero__overlay" />
         <div className="container sp-hero__content">
-          <h1 className="sp-hero__title">{`Tree Trimming & Stump Removal in ${config.business.address.replace(', ' + config.business.state, '')}`}</h1>
+          <h1 className="sp-hero__title">Tree Trimming &amp; Stump Removal</h1>
           <p className="sp-hero__sub">Keep your trees healthy and your property safe with professional tree care.</p>
           <Link to="/estimate" className="sp-hero__btn">Get a Free Estimate</Link>
         </div>

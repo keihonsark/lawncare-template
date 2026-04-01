@@ -68,7 +68,7 @@ export default function MulchRiverRock() {
       <section className="sp-hero" style={{ backgroundImage: 'url(/river-rock.png)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
         <div className="sp-hero__overlay" />
         <div className="container sp-hero__content">
-          <h1 className="sp-hero__title">{`Mulch & River Rock Installation in ${config.business.address.replace(', ' + config.business.state, '')}`}</h1>
+          <h1 className="sp-hero__title">Mulch &amp; River Rock Installation</h1>
           <p className="sp-hero__sub">Decorative ground cover that protects your plants and boosts curb appeal.</p>
           <Link to="/estimate" className="sp-hero__btn">Get a Free Estimate</Link>
         </div>

@@ -65,7 +65,7 @@
 /* What's Included */
 .sp-included {
   padding: 5rem 0;
-  background: #111111;
+  background: #fff;
 }
 
 .sp-included__eyebrow {
@@ -81,7 +81,7 @@
 .sp-included__title {
   font-size: 2rem;
   font-weight: 800;
-  color: #fff;
+  color: #1a1a1a;
   text-align: center;
   margin-bottom: 3rem;
 }
@@ -100,9 +100,9 @@
   gap: 12px;
   font-size: 1.05rem;
   font-weight: 500;
-  color: #ccc;
+  color: #444;
   padding: 10px 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
 }
 
 .sp-included__check {
@@ -118,13 +118,13 @@
 /* Why Choose */
 .sp-why {
   padding: 5rem 0;
-  background: var(--black);
+  background: #f7f7f7;
 }
 
 .sp-why__title {
   font-size: 2rem;
   font-weight: 800;
-  color: #fff;
+  color: #1a1a1a;
   text-align: center;
   margin-bottom: 3rem;
 }
@@ -136,11 +136,12 @@
 }
 
 .sp-why__card {
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(76, 175, 110, 0.2);
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.08);
   border-radius: 16px;
   padding: 2rem;
   text-align: center;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
 }
 
 .sp-why__num {
@@ -153,7 +154,7 @@
 
 .sp-why__label {
   font-size: 0.95rem;
-  color: rgba(255, 255, 255, 0.7);
+  color: #666;
 }
 
 .sp-why__card--google {
@@ -172,8 +173,8 @@
 /* Process */
 .sp-process {
   padding: 80px 0;
-  background: #111111;
-  border-top: 1px solid rgba(26, 122, 60, 0.3);
+  background: #fff;
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
 }
 
 .sp-process__eyebrow {
@@ -189,7 +190,7 @@
 .sp-process__title {
   font-size: 2rem;
   font-weight: 800;
-  color: #fff;
+  color: #1a1a1a;
   text-align: center;
   margin-bottom: 3.5rem;
 }
@@ -265,7 +266,7 @@
 .sp-process__label {
   font-size: 16px;
   font-weight: 600;
-  color: #fff;
+  color: #1a1a1a;
   line-height: 1.5;
   max-width: 140px;
   margin: 0 auto;
@@ -274,13 +275,13 @@
 /* Pricing */
 .sp-pricing {
   padding: 5rem 0;
-  background: #0a0a0a;
+  background: #f7f7f7;
 }
 
 .sp-pricing__title {
   font-size: 2rem;
   font-weight: 800;
-  color: #fff;
+  color: #1a1a1a;
   text-align: center;
   margin-bottom: 3rem;
 }
@@ -294,12 +295,13 @@
 }
 
 .sp-pricing__card {
-  background: rgba(255, 255, 255, 0.04);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.08);
   border-radius: 16px;
   padding: 2.5rem 2rem;
   text-align: center;
   border-top: 4px solid #1A3D2B;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
 }
 
 .sp-pricing__tier {
@@ -307,20 +309,20 @@
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 1.5px;
-  color: #999;
+  color: #888;
   margin-bottom: 0.75rem;
 }
 
 .sp-pricing__range {
   font-size: 2.25rem;
   font-weight: 800;
-  color: #fff;
+  color: #1a1a1a;
   margin-bottom: 0.5rem;
 }
 
 .sp-pricing__unit {
   font-size: 0.85rem;
-  color: #999;
+  color: #888;
   margin-bottom: 1.5rem;
 }
 
@@ -344,20 +346,20 @@
 .sp-pricing__disclaimer {
   text-align: center;
   font-size: 0.8rem;
-  color: #666;
+  color: #888;
   margin-top: 2rem;
 }
 
 /* FAQ */
 .sp-faq {
   padding: 5rem 0;
-  background: #0a0a0a;
+  background: #f7f7f7;
 }
 
 .sp-faq__title {
   font-size: 2rem;
   font-weight: 800;
-  color: #fff;
+  color: #1a1a1a;
   text-align: center;
   margin-bottom: 3rem;
 }
@@ -371,9 +373,10 @@
 }
 
 .sp-faq__item {
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(0, 0, 0, 0.08);
   border-radius: 8px;
   overflow: hidden;
+  background: #fff;
 }
 
 .sp-faq__q {
@@ -387,13 +390,13 @@
   font-family: var(--font-body);
   font-size: 1rem;
   font-weight: 600;
-  color: #fff;
+  color: #1a1a1a;
   cursor: pointer;
   text-align: left;
 }
 
 .sp-faq__q:hover {
-  background: rgba(255, 255, 255, 0.03);
+  background: rgba(0, 0, 0, 0.02);
 }
 
 .sp-faq__arrow {
@@ -410,20 +413,20 @@
 .sp-faq__a {
   padding: 0 20px 20px;
   font-size: 0.95rem;
-  color: #999;
+  color: #666;
   line-height: 1.7;
 }
 
 /* Reviews */
 .sp-reviews {
   padding: 5rem 0;
-  background: #111111;
+  background: #fff;
 }
 
 .sp-reviews__title {
   font-size: 2rem;
   font-weight: 800;
-  color: #fff;
+  color: #1a1a1a;
   text-align: center;
   margin-bottom: 3rem;
 }
@@ -437,8 +440,8 @@
 }
 
 .sp-reviews__card {
-  background: rgba(255, 255, 255, 0.04);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: #f7f7f7;
+  border: 1px solid rgba(0, 0, 0, 0.08);
   border-radius: 16px;
   padding: 2rem;
 }
@@ -451,7 +454,7 @@
 
 .sp-reviews__text {
   font-size: 0.95rem;
-  color: #ccc;
+  color: #555;
   line-height: 1.7;
   font-style: italic;
   margin-bottom: 1rem;
@@ -480,21 +483,21 @@
 /* Bottom CTA */
 .sp-cta {
   padding: 5rem 0;
-  background: #0a0a0a;
-  border-top: 1px solid rgba(26, 122, 60, 0.3);
+  background: #f7f7f7;
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
   text-align: center;
 }
 
 .sp-cta__title {
   font-size: 2.5rem;
   font-weight: 800;
-  color: #fff;
+  color: #1a1a1a;
   margin-bottom: 1rem;
 }
 
 .sp-cta__sub {
   font-size: 1.05rem;
-  color: rgba(255, 255, 255, 0.7);
+  color: #666;
   margin-bottom: 2rem;
 }
 

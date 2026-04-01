@@ -68,7 +68,7 @@ export default function LandscapingHardscape() {
       <section className="sp-hero" style={{ backgroundImage: 'url(/travertine-stone.png)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
         <div className="sp-hero__overlay" />
         <div className="container sp-hero__content">
-          <h1 className="sp-hero__title">{`Landscaping & Hardscape in ${config.business.address.replace(', ' + config.business.state, '')}`}</h1>
+          <h1 className="sp-hero__title">Landscaping &amp; Hardscape</h1>
           <p className="sp-hero__sub">Full landscaping, cement work, gardening, and outdoor construction services.</p>
           <Link to="/estimate" className="sp-hero__btn">Get a Free Estimate</Link>
         </div>

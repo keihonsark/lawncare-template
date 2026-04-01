@@ -68,7 +68,7 @@ export default function LawnMaintenance() {
       <section className="sp-hero" style={{ backgroundImage: 'url(/grass-macro-dew.png)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
         <div className="sp-hero__overlay" />
         <div className="container sp-hero__content">
-          <h1 className="sp-hero__title">{`Professional Lawn Maintenance in ${config.business.address.replace(', ' + config.business.state, '')}`}</h1>
+          <h1 className="sp-hero__title">Professional Lawn Maintenance</h1>
           <p className="sp-hero__sub">Weekly and bi-weekly plans that keep your lawn sharp all season long.</p>
           <Link to="/estimate" className="sp-hero__btn">Get a Free Estimate</Link>
         </div>
