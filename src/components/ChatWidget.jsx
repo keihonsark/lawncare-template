@@ -44,6 +44,14 @@ export default function ChatWidget() {
   const bodyRef = useRef(null)
   const location = useLocation()
 
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768)
+
+  useEffect(() => {
+    const handleResize = () => setIsMobile(window.innerWidth <= 768)
+    window.addEventListener('resize', handleResize)
+    return () => window.removeEventListener('resize', handleResize)
+  }, [])
+
   useEffect(() => {
     if (location.pathname !== '/') return
     const timer = setTimeout(() => {
@@ -59,6 +67,8 @@ export default function ChatWidget() {
       bodyRef.current.scrollTop = bodyRef.current.scrollHeight
     }
   }, [messages])
+
+  if (isMobile) return null
 
   const handleOpen = () => {
     setOpen(true)
