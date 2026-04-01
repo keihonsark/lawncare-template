@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 import './StatsCounter.css'
+import config from '../config'
 
 function CountUp({ end, suffix = '', duration = 1600 }) {
   const [value, setValue] = useState(0)
@@ -38,6 +39,9 @@ function CountUp({ end, suffix = '', duration = 1600 }) {
   )
 }
 
+const { reviewCount, founded } = config.business
+const yearsExp = new Date().getFullYear() - parseInt(founded) || 5
+
 export default function StatsCounter() {
   return (
     <section className="stats fade-up">
@@ -50,7 +54,7 @@ export default function StatsCounter() {
             <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18A10.96 10.96 0 001 12c0 1.77.42 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/>
             <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/>
           </svg>
-          <span className="stats__num stats__num--gradient">[X]</span>
+          <span className="stats__num stats__num--gradient">{reviewCount}</span>
           <div className="stats__google-stars">★★★★★</div>
           <span className="stats__label">5-Star Reviews</span>
         </div>
@@ -59,11 +63,11 @@ export default function StatsCounter() {
         <div className="stats__item">
           <div className="stats__icon">
             <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
-              <circle cx="24" cy="24" r="18" stroke="#4caf6e" strokeWidth="2.5" fill="none"/>
-              <path d="M24 14v12l8 4" stroke="#4caf6e" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
+              <circle cx="24" cy="24" r="18" stroke="#2D6B47" strokeWidth="2.5" fill="none"/>
+              <path d="M24 14v12l8 4" stroke="#2D6B47" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
             </svg>
           </div>
-          <span className="stats__num stats__num--gradient">[X]+</span>
+          <CountUp end={yearsExp} suffix="+" />
           <span className="stats__counting">AND COUNTING</span>
           <span className="stats__label">Years of Experience</span>
         </div>
@@ -72,8 +76,8 @@ export default function StatsCounter() {
         <div className="stats__item">
           <div className="stats__icon">
             <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
-              <path d="M24 6C14.06 6 6 14.06 6 24s8.06 18 18 18 18-8.06 18-18S33.94 6 24 6z" stroke="#4caf6e" strokeWidth="2.5" fill="none"/>
-              <path d="M16 24l6 6 10-11" stroke="#4caf6e" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
+              <path d="M24 6C14.06 6 6 14.06 6 24s8.06 18 18 18 18-8.06 18-18S33.94 6 24 6z" stroke="#2D6B47" strokeWidth="2.5" fill="none"/>
+              <path d="M16 24l6 6 10-11" stroke="#2D6B47" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
             </svg>
           </div>
           <span className="stats__num stats__num--gradient">100%</span>

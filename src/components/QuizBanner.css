@@ -16,7 +16,7 @@
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 1.5px;
-  color: #4caf6e;
+  color: #2D6B47;
   margin-bottom: 0.75rem;
 }
 
@@ -38,7 +38,7 @@
   display: inline-flex;
   align-items: center;
   padding: 0.85rem 2rem;
-  background: #1a7a3c;
+  background: #1A3D2B;
   color: #fff;
   font-weight: 700;
   font-size: 0.95rem;
@@ -49,7 +49,7 @@
 }
 
 .quiz-banner__btn:hover {
-  background: #0f4d25;
+  background: #0F2518;
   transform: translateY(-2px);
 }
 

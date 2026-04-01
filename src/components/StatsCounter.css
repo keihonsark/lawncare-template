@@ -9,8 +9,8 @@
   );
   padding: 4.5rem 0;
   position: relative;
-  border-top: 1px solid #4caf6e;
-  border-bottom: 1px solid #4caf6e;
+  border-top: 1px solid #2D6B47;
+  border-bottom: 1px solid #2D6B47;
 }
 
 .stats__grid {
@@ -50,12 +50,12 @@
   font-family: var(--font-heading);
   font-size: 4rem;
   font-weight: 800;
-  color: #4caf6e;
+  color: #2D6B47;
   line-height: 1;
 }
 
 .stats__num--gradient {
-  background: linear-gradient(90deg, #4caf6e, #2dd4bf, #d4af37, #2dd4bf, #4caf6e);
+  background: linear-gradient(90deg, #2D6B47, #2dd4bf, #d4af37, #2dd4bf, #2D6B47);
   background-size: 300% auto;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

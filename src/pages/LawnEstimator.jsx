@@ -69,9 +69,9 @@ export default function LawnEstimator() {
       drawingMode: null,
       drawingControl: false,
       polygonOptions: {
-        fillColor: '#1a7a3c',
+        fillColor: '#1A3D2B',
         fillOpacity: 0.35,
-        strokeColor: '#4caf6e',
+        strokeColor: '#2D6B47',
         strokeWeight: 2,
         editable: true,
       },

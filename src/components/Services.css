@@ -40,7 +40,7 @@
   overflow: hidden;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
   border: 1px solid rgba(0, 0, 0, 0.04);
-  border-top: 4px solid #1a7a3c;
+  border-top: 4px solid #1A3D2B;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: default;
 }

@@ -6,7 +6,7 @@
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  background: #1a7a3c;
+  background: #1A3D2B;
   color: #fff;
   font-weight: 700;
   font-size: 0.9rem;
@@ -62,7 +62,7 @@
     position: absolute;
     inset: 0;
     border-radius: 50%;
-    border: 3px solid #1a7a3c;
+    border: 3px solid #1A3D2B;
     animation: callPulse 2s ease-out infinite;
     pointer-events: none;
   }

@@ -15,8 +15,25 @@
 .footer__logo {
   display: flex;
   flex-direction: column;
-  line-height: 1;
+  line-height: 1.1;
   margin-bottom: 1rem;
+}
+
+.footer__logo-line1 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 1.6rem;
+  color: #fff;
+  letter-spacing: 0.02em;
+}
+
+.footer__logo-line2 {
+  font-family: var(--font-body);
+  font-weight: 300;
+  font-size: 0.7rem;
+  color: rgba(255, 255, 255, 0.6);
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
 }
 
 .footer__desc {

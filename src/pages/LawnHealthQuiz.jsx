@@ -54,8 +54,8 @@ const questions = [
 ]
 
 function getGrade(score) {
-  if (score >= 90) return { letter: 'A', color: '#1a7a3c', label: 'Excellent' }
-  if (score >= 75) return { letter: 'B', color: '#4caf6e', label: 'Good' }
+  if (score >= 90) return { letter: 'A', color: '#1A3D2B', label: 'Excellent' }
+  if (score >= 75) return { letter: 'B', color: '#2D6B47', label: 'Good' }
   if (score >= 60) return { letter: 'C', color: '#e6b800', label: 'Fair' }
   if (score >= 40) return { letter: 'D', color: '#e67e00', label: 'Needs Work' }
   return { letter: 'F', color: '#d32f2f', label: 'Critical' }

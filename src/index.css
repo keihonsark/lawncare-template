@@ -1,8 +1,8 @@
 :root {
-  --green: #1a7a3c;
-  --green-dark: #0f4d25;
-  --green-light: #4caf6e;
-  --green-pale: #f0fdf4;
+  --green: #1A3D2B;
+  --green-dark: #0F2518;
+  --green-light: #2D6B47;
+  --green-pale: #F5F0E8;
   --black: #0a0a0a;
   --font-heading: 'Outfit', sans-serif;
   --font-body: 'Outfit', sans-serif;
@@ -149,7 +149,7 @@ img {
 }
 
 .sh__outline {
-  background: linear-gradient(90deg, #1a7a3c, #4caf6e, #1a7a3c);
+  background: linear-gradient(90deg, #1A3D2B, #2D6B47, #1A3D2B);
   background-size: 200% auto;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -164,7 +164,7 @@ img {
 .sh__line {
   width: 0;
   height: 3px;
-  background: #4caf6e;
+  background: #2D6B47;
   border-radius: 2px;
   margin: 0 auto 0.75rem;
   transition: width 0.5s ease 0.3s;

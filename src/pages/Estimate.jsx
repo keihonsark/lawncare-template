@@ -256,8 +256,8 @@ export default function Estimate() {
           <div className="est-card est-success">
             <div className="est-success__check">
               <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
-                <circle cx="40" cy="40" r="38" stroke="#4caf6e" strokeWidth="3" fill="none" className="est-success__circle" />
-                <path d="M24 42l10 10 22-24" stroke="#1a7a3c" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" fill="none" className="est-success__tick" />
+                <circle cx="40" cy="40" r="38" stroke="#2D6B47" strokeWidth="3" fill="none" className="est-success__circle" />
+                <path d="M24 42l10 10 22-24" stroke="#1A3D2B" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" fill="none" className="est-success__tick" />
               </svg>
             </div>
             <h2 className="est-success__title">Estimate Sent!</h2>
@@ -310,7 +310,10 @@ export default function Estimate() {
       {/* Card */}
       <div className="est-body">
         <div className="est-card">
-          <img src="/logo-placeholder.png" alt={config.business.name} className="est-card__logo" />
+          <div className="est-card__logo">
+            <span className="est-card__logo-line1">MonteVerde</span>
+            <span className="est-card__logo-line2">Landscaping</span>
+          </div>
           <h2 className="est-card__title">{STEP_TITLES[step - 1]}</h2>
 
           {/* STEP 1 */}

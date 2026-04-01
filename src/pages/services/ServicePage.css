@@ -40,7 +40,7 @@
 
 .sp-hero__sub {
   font-size: 1.2rem;
-  color: #4caf6e;
+  color: #2D6B47;
   font-weight: 500;
   margin-bottom: 2rem;
 }
@@ -49,7 +49,7 @@
   display: inline-flex;
   align-items: center;
   padding: 0.85rem 2rem;
-  background: #1a7a3c;
+  background: #1A3D2B;
   color: #fff;
   font-weight: 700;
   font-size: 1rem;
@@ -58,7 +58,7 @@
 }
 
 .sp-hero__btn:hover {
-  background: #0f4d25;
+  background: #0F2518;
   transform: translateY(-2px);
 }
 
@@ -73,7 +73,7 @@
   text-transform: uppercase;
   font-size: 0.8rem;
   letter-spacing: 0.1em;
-  color: #1a7a3c;
+  color: #1A3D2B;
   font-weight: 600;
   margin-bottom: 0.5rem;
 }
@@ -112,7 +112,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #1a7a3c;
+  color: #1A3D2B;
 }
 
 /* Why Choose */
@@ -146,7 +146,7 @@
 .sp-why__num {
   font-size: 2.5rem;
   font-weight: 800;
-  color: #4caf6e;
+  color: #2D6B47;
   line-height: 1;
   margin-bottom: 0.5rem;
 }
@@ -181,7 +181,7 @@
   text-transform: uppercase;
   font-size: 0.8rem;
   letter-spacing: 0.1em;
-  color: #1a7a3c;
+  color: #1A3D2B;
   font-weight: 600;
   margin-bottom: 0.5rem;
 }
@@ -251,8 +251,8 @@
   height: 56px;
   border-radius: 50%;
   background: transparent;
-  border: 2px solid #1a7a3c;
-  color: #1a7a3c;
+  border: 2px solid #1A3D2B;
+  color: #1A3D2B;
   font-weight: 800;
   font-size: 1.25rem;
   display: flex;
@@ -299,7 +299,7 @@
   border-radius: 16px;
   padding: 2.5rem 2rem;
   text-align: center;
-  border-top: 4px solid #1a7a3c;
+  border-top: 4px solid #1A3D2B;
 }
 
 .sp-pricing__tier {
@@ -328,7 +328,7 @@
   display: inline-flex;
   align-items: center;
   padding: 0.65rem 1.75rem;
-  background: #1a7a3c;
+  background: #1A3D2B;
   color: #fff;
   font-weight: 700;
   font-size: 0.9rem;
@@ -337,7 +337,7 @@
 }
 
 .sp-pricing__btn:hover {
-  background: #0f4d25;
+  background: #0F2518;
   transform: translateY(-2px);
 }
 
@@ -398,7 +398,7 @@
 
 .sp-faq__arrow {
   font-size: 1.25rem;
-  color: #1a7a3c;
+  color: #1A3D2B;
   transition: transform 0.3s ease;
   flex-shrink: 0;
 }
@@ -459,7 +459,7 @@
 
 .sp-reviews__author {
   font-weight: 600;
-  color: #4caf6e;
+  color: #2D6B47;
   font-size: 0.9rem;
 }
 
@@ -469,7 +469,7 @@
 }
 
 .sp-cta__accent {
-  background: linear-gradient(90deg, #1a7a3c, #4caf6e, #1a7a3c);
+  background: linear-gradient(90deg, #1A3D2B, #2D6B47, #1A3D2B);
   background-size: 200% auto;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -503,7 +503,7 @@
   align-items: center;
   gap: 0.5rem;
   padding: 1rem 2.5rem;
-  background: #1a7a3c;
+  background: #1A3D2B;
   color: #fff;
   font-weight: 700;
   font-size: 1rem;
@@ -512,7 +512,7 @@
 }
 
 .sp-cta__btn:hover {
-  background: #0f4d25;
+  background: #0F2518;
   transform: translateY(-2px);
 }
 

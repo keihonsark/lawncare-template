@@ -1,7 +1,7 @@
 .est-page {
   min-height: 100vh; /* fallback */
   min-height: 100dvh;
-  background: #f0fdf4;
+  background: #F5F0E8;
 }
 
 /* Header */
@@ -52,7 +52,7 @@
 
 .est-progress__fill {
   height: 100%;
-  background: #1a7a3c;
+  background: #1A3D2B;
   border-radius: 100px;
   transition: width 0.4s cubic-bezier(0.22, 1, 0.36, 1);
 }
@@ -80,16 +80,16 @@
 }
 
 .est-progress__step.active {
-  background: #1a7a3c;
+  background: #1A3D2B;
   color: #fff;
-  border-color: #1a7a3c;
+  border-color: #1A3D2B;
   box-shadow: 0 4px 16px rgba(26, 122, 60, 0.35);
 }
 
 .est-progress__step.done {
-  background: #4caf6e;
+  background: #2D6B47;
   color: #fff;
-  border-color: #4caf6e;
+  border-color: #2D6B47;
 }
 
 /* Body */
@@ -107,15 +107,32 @@
   padding: 2.5rem;
   width: 100%;
   max-width: 640px;
-  border-top: 5px solid #1a7a3c;
+  border-top: 5px solid #1A3D2B;
 }
 
 .est-card__logo {
-  width: 120px;
-  height: auto;
-  object-fit: contain;
-  display: block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 1.1;
   margin: 0 auto 1rem auto;
+}
+
+.est-card__logo-line1 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: var(--green-dark);
+  letter-spacing: 0.02em;
+}
+
+.est-card__logo-line2 {
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: 0.6rem;
+  color: var(--green);
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
 }
 
 .est-card__title {
@@ -353,7 +370,7 @@
   font-family: var(--font-heading);
   font-size: 3.25rem;
   font-weight: 800;
-  background: linear-gradient(135deg, #1a7a3c, #4caf6e);
+  background: linear-gradient(135deg, #1A3D2B, #2D6B47);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -427,8 +444,8 @@
 
 .est-btn--back {
   background: transparent;
-  color: #1a7a3c;
-  border: 2px solid #1a7a3c;
+  color: #1A3D2B;
+  border: 2px solid #1A3D2B;
 }
 
 .est-btn--back:hover {
@@ -436,12 +453,12 @@
 }
 
 .est-btn--primary {
-  background: #1a7a3c;
+  background: #1A3D2B;
   color: #fff;
 }
 
 .est-btn--primary:hover {
-  background: #0f4d25;
+  background: #0F2518;
   transform: translateY(-2px);
 }
 

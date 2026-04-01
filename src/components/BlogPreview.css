@@ -69,7 +69,7 @@
 
 .blog-card__cat {
   display: inline-block;
-  background: #1a7a3c;
+  background: #1A3D2B;
   color: #fff;
   font-size: 0.75rem;
   font-weight: 600;
@@ -121,7 +121,7 @@
   display: inline-flex;
   align-items: center;
   padding: 0.75rem 2rem;
-  background: #1a7a3c;
+  background: #1A3D2B;
   color: #fff;
   font-weight: 700;
   font-size: 0.95rem;
@@ -130,7 +130,7 @@
 }
 
 .blog-preview__btn:hover {
-  background: #0f4d25;
+  background: #0F2518;
   transform: translateY(-2px);
 }
 

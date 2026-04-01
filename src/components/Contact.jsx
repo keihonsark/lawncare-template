@@ -61,8 +61,8 @@ export default function Contact() {
         {submitted ? (
           <div className="contact__form contact__success">
             <svg width="64" height="64" viewBox="0 0 64 64" fill="none">
-              <circle cx="32" cy="32" r="30" stroke="#4caf6e" strokeWidth="3" fill="none" />
-              <path d="M20 34l8 8 16-18" stroke="#1a7a3c" strokeWidth="3.5" strokeLinecap="round" strokeLinejoin="round" fill="none" />
+              <circle cx="32" cy="32" r="30" stroke="#2D6B47" strokeWidth="3" fill="none" />
+              <path d="M20 34l8 8 16-18" stroke="#1A3D2B" strokeWidth="3.5" strokeLinecap="round" strokeLinejoin="round" fill="none" />
             </svg>
             <h3>Message Sent!</h3>
             <p>{successMessage}</p>
@@ -92,21 +92,12 @@ export default function Contact() {
               <label htmlFor="service">Service</label>
               <select id="service" name="service" defaultValue="">
                 <option value="" disabled>Select a service...</option>
+                <option>Pruning</option>
+                <option>Tree Trimming</option>
                 <option>Lawn Maintenance</option>
-                <option>Sod & Turf Installation</option>
-                <option>Irrigation Systems</option>
-                <option>Mulch & River Rock</option>
-                <option>Tree & Stump Services</option>
-                <option>Landscaping & Hardscape</option>
-                <option>Mowing & Edging</option>
-                <option>Trimming & Blowing</option>
-                <option>Weekly Maintenance</option>
-                <option>Bi-Weekly Maintenance</option>
-                <option>Sprinkler Systems</option>
-                <option>Drip Irrigation</option>
-                <option>Cement Work</option>
-                <option>Weed Control</option>
-                <option>Trash Removal</option>
+                <option>Yard Clean Up</option>
+                <option>Sprinkler Repair</option>
+                <option>Free Estimate</option>
               </select>
             </div>
 

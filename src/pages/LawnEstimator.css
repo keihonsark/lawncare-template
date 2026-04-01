@@ -35,7 +35,7 @@
   width: 32px;
   height: 32px;
   border-radius: 50%;
-  background: #1a7a3c;
+  background: #1A3D2B;
   color: #fff;
   font-weight: 700;
   font-size: 0.85rem;
@@ -115,21 +115,21 @@
 }
 
 .le-btn--draw {
-  background: #1a7a3c;
+  background: #1A3D2B;
   color: #fff;
 }
 
 .le-btn--draw:hover {
-  background: #0f4d25;
+  background: #0F2518;
 }
 
 .le-btn--finish {
-  background: #1a7a3c;
+  background: #1A3D2B;
   color: #fff;
 }
 
 .le-btn--finish:hover {
-  background: #0f4d25;
+  background: #0F2518;
 }
 
 .le-btn--finish:disabled {
@@ -148,7 +148,7 @@
 
 .le-hint {
   background: var(--green-pale);
-  border-left: 4px solid #1a7a3c;
+  border-left: 4px solid #1A3D2B;
   padding: 0.75rem 1rem;
   font-size: 0.88rem;
   color: #333;
@@ -180,7 +180,7 @@
 .le-result__card {
   background: #fff;
   border-radius: 20px;
-  border-top: 5px solid #1a7a3c;
+  border-top: 5px solid #1A3D2B;
   box-shadow: 0 12px 48px rgba(0, 0, 0, 0.1);
   padding: 2.5rem;
   max-width: 500px;
@@ -252,7 +252,7 @@
 .le-result__plan-name {
   font-size: 0.95rem;
   font-weight: 700;
-  color: #1a7a3c;
+  color: #1A3D2B;
   background: var(--green-pale);
   padding: 0.3rem 0.85rem;
   border-radius: 100px;
@@ -286,7 +286,7 @@
   display: inline-flex;
   align-items: center;
   padding: 0.85rem 2rem;
-  background: #1a7a3c;
+  background: #1A3D2B;
   color: #fff;
   font-weight: 700;
   font-size: 1rem;
@@ -295,7 +295,7 @@
 }
 
 .le-result__cta:hover {
-  background: #0f4d25;
+  background: #0F2518;
   transform: translateY(-2px);
 }
 

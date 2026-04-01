@@ -156,7 +156,7 @@ a.contact__detail-value:hover {
   align-items: center;
   gap: 0.5rem;
   padding: 0.7rem 1.6rem;
-  background: #1a7a3c;
+  background: #1A3D2B;
   color: #fff;
   border: none;
   border-radius: 100px;
@@ -169,7 +169,7 @@ a.contact__detail-value:hover {
 }
 
 .contact__submit:hover {
-  background: #0f4d25;
+  background: #0F2518;
   transform: translateY(-2px);
   box-shadow: 0 8px 25px rgba(26, 122, 60, 0.3);
 }

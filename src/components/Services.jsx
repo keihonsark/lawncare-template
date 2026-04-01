@@ -1,17 +1,17 @@
 import { Link } from 'react-router-dom'
-import { Scissors, Layers, Droplets, Mountain, TreePine, Hammer } from 'lucide-react'
+import { Scissors, TreePine, Droplets, Leaf, Wrench, ClipboardCheck } from 'lucide-react'
 import config from '../config'
 import './Services.css'
 
 const { services: svcContent } = config.content
 
 const services = [
-  { img: '/08_lawn_maintenance.png', Icon: Scissors, title: 'Lawn Maintenance', desc: 'Mowing, edging, trimming, and blowing. Weekly and bi-weekly plans to keep your lawn sharp all season.', link: '/services/lawn-maintenance' },
-  { img: '/03_sod_installation.png', Icon: Layers, title: 'Sod & Turf Installation', desc: 'Fresh sod laid professionally for an instant lush lawn. We handle prep, install, and aftercare.', link: '/services/sod-installation' },
-  { img: '/06_sprinkler_system.png', Icon: Droplets, title: 'Irrigation Systems', desc: 'Sprinkler and drip system installation and repair for efficient, reliable watering.', link: '/services/irrigation-systems' },
-  { img: '/mulch.png', Icon: Mountain, title: 'Mulch & River Rock', desc: 'Decorative ground cover installation to protect your plants and boost curb appeal.', link: '/services/mulch-river-rock' },
-  { img: '/07_tree_service.png', Icon: TreePine, title: 'Tree & Stump Services', desc: 'Professional tree trimming, removal, and stump grinding by experienced crews.', link: '/services/tree-services' },
-  { img: '/landscape-hardscape.png', Icon: Hammer, title: 'Landscaping & Hardscape', desc: 'Full landscaping, cement work, gardening, and construction services.', link: '/services/landscaping-hardscape' },
+  { img: '/08_lawn_maintenance.png', Icon: Scissors, title: 'Pruning', desc: 'Careful shaping and trimming of shrubs, hedges, and ornamental plants to keep your landscape looking clean and healthy year-round.', link: '/services/lawn-maintenance' },
+  { img: '/07_tree_service.png', Icon: TreePine, title: 'Tree Trimming', desc: 'Safe, professional trimming for trees of all sizes. We remove dead branches, improve structure, and keep your property looking its best.', link: '/services/tree-services' },
+  { img: '/08_lawn_maintenance.png', Icon: Leaf, title: 'Lawn Maintenance', desc: 'Weekly and bi-weekly mowing, edging, trimming, and blowing. We keep your lawn sharp so you never have to worry about it.', link: '/services/lawn-maintenance' },
+  { img: '/landscape-hardscape.png', Icon: Wrench, title: 'Yard Clean Up', desc: 'Full yard clean-ups for overgrown, neglected, or seasonal mess. We haul debris, clear weeds, and leave your property spotless.', link: '/services/landscaping-hardscape' },
+  { img: '/06_sprinkler_system.png', Icon: Droplets, title: 'Sprinkler Repair', desc: 'Fast, reliable sprinkler system repairs — broken heads, leaking valves, timer issues, and full system diagnostics.', link: '/services/irrigation-systems' },
+  { img: '/landscape-hardscape.png', Icon: ClipboardCheck, title: 'Free Estimates', desc: 'Not sure what you need? We\'ll come out, walk your property, and give you an honest quote — no pressure, no obligation.', link: '/estimate' },
 ]
 
 export default function Services() {
@@ -32,7 +32,7 @@ export default function Services() {
                   <img src={s.img} alt={s.title} loading="lazy" />
                 </div>
                 <div className="svc-card__body">
-                  <span className="svc-card__icon"><s.Icon size={24} color="#1a7a3c" strokeWidth={1.5} /></span>
+                  <span className="svc-card__icon"><s.Icon size={24} color="#1A3D2B" strokeWidth={1.5} /></span>
                   <h3>{s.title}</h3>
                   <p>{s.desc}</p>
                   {s.link && (

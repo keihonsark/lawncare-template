@@ -28,6 +28,30 @@
   transition: color 0.3s;
 }
 
+/* Text Logo */
+.nav__logo-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+}
+
+.nav__logo-line1 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 1.35rem;
+  color: #fff;
+  letter-spacing: 0.02em;
+}
+
+.nav__logo-line2 {
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: 0.7rem;
+  color: rgba(255, 255, 255, 0.75);
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
 /* Menu */
 .nav__menu {
   display: flex;
@@ -80,14 +104,14 @@
   border-radius: 100px;
   font-weight: 700;
   font-size: 0.85rem;
-  background: #1a7a3c;
+  background: #1A3D2B;
   color: #fff;
   white-space: nowrap;
   transition: all 0.3s ease;
 }
 
 .nav__estimate:hover {
-  background: #0f4d25;
+  background: #0F2518;
   transform: scale(1.03);
 }
 
@@ -133,6 +157,19 @@
 .nav--scrolled .nav__phone {
   background: var(--green);
   color: #fff;
+}
+
+/* Bilingual badge */
+.nav__bilingual {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #F5F0E8;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 0.3rem 0.75rem;
+  border-radius: 100px;
+  border: 1px solid rgba(245, 240, 232, 0.25);
+  white-space: nowrap;
+  letter-spacing: 0.03em;
 }
 
 /* Services dropdown */
@@ -185,24 +222,24 @@
 .nav__dropdown-menu a {
   display: block;
   padding: 0.6rem 1rem;
-  color: #0f4d25 !important;
+  color: #0F2518 !important;
   font-weight: 500;
   font-size: 0.88rem;
   border-radius: 8px;
   transition: background 0.2s;
-  -webkit-text-fill-color: #0f4d25;
+  -webkit-text-fill-color: #0F2518;
 }
 
 .nav__dropdown-menu a:hover {
-  background: #f0fdf4;
+  background: #F5F0E8;
 }
 
 .nav__dropdown-highlight {
   border-top: 1px solid #eee;
   margin-top: 0.25rem;
   padding-top: 0.7rem !important;
-  color: #1a7a3c !important;
-  -webkit-text-fill-color: #1a7a3c !important;
+  color: #1A3D2B !important;
+  -webkit-text-fill-color: #1A3D2B !important;
   font-weight: 600 !important;
 }
 
@@ -332,6 +369,12 @@
   .nav__portal {
     color: #555;
     border-color: #ddd;
+  }
+
+  .nav__bilingual {
+    color: var(--green);
+    background: var(--green-pale);
+    border-color: var(--green-light);
   }
 }
 

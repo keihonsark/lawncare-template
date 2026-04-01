@@ -31,11 +31,7 @@ export default function Hero() {
       <div className="hero__overlay" />
 
       <div className="container hero__content">
-        <img
-          src="/logo-placeholder.png"
-          alt={config.business.name}
-          className="hero__logo"
-        />
+        <img src="/monteverde-logo.png" alt="MonteVerde Landscaping" className="hero__logo" />
 
         <h1 className="hero__title">
           Your Yard,<br />

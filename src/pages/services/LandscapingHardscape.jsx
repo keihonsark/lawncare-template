@@ -82,7 +82,7 @@ export default function LandscapingHardscape() {
             {included.map((item) => (
               <div key={item} className="sp-included__item">
                 <span className="sp-included__check">
-                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1a7a3c" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1A3D2B" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                     <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
                     <path d="M22 4 12 14.01l-3-3" />
                   </svg>

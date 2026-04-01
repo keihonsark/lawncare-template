@@ -46,7 +46,7 @@
 
 .bp-article__cat {
   display: inline-block;
-  background: #1a7a3c;
+  background: #1A3D2B;
   color: #fff;
   font-size: 0.75rem;
   font-weight: 600;
@@ -95,7 +95,7 @@
 
 .bp-article__body .blog__tip {
   background: var(--green-pale);
-  border-left: 4px solid #1a7a3c;
+  border-left: 4px solid #1A3D2B;
   padding: 1.25rem 1.5rem;
   border-radius: 0 12px 12px 0;
   margin: 2rem 0;
@@ -105,7 +105,7 @@
 }
 
 .bp-article__body .blog__tip strong {
-  color: #0f4d25;
+  color: #0F2518;
 }
 
 .bp-article__cta {
@@ -127,7 +127,7 @@
   display: inline-flex;
   align-items: center;
   padding: 0.75rem 2rem;
-  background: #1a7a3c;
+  background: #1A3D2B;
   color: #fff;
   font-weight: 700;
   font-size: 0.95rem;
@@ -136,7 +136,7 @@
 }
 
 .bp-article__cta-btn:hover {
-  background: #0f4d25;
+  background: #0F2518;
   transform: translateY(-2px);
 }
 

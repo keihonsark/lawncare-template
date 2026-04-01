@@ -31,7 +31,7 @@
   align-items: center;
   gap: 0.6rem;
   padding: 0.85rem 2rem;
-  background: #1a7a3c;
+  background: #1A3D2B;
   color: #fff;
   font-weight: 700;
   font-size: 0.95rem;
@@ -41,7 +41,7 @@
 }
 
 .est-banner__btn:hover {
-  background: #0f4d25;
+  background: #0F2518;
   transform: translateY(-2px);
 }
 

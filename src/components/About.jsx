@@ -37,7 +37,7 @@ export default function About() {
             <span>⭐ {about.badge}</span>
           </div>
           <p className="about__eyebrow">{about.eyebrow}</p>
-          <h2 className="about__heading sh__heading" style={{ fontWeight: 800 }}>{about.headline.replace(about.headlineAccent, '').trim()} <span style={{ color: '#4caf6e' }}>{about.headlineAccent}</span></h2>
+          <h2 className="about__heading sh__heading" style={{ fontWeight: 800 }}>{about.headline.replace(about.headlineAccent, '').trim()} <span style={{ color: '#2D6B47' }}>{about.headlineAccent}</span></h2>
           <div className="sh__line sh--left" style={{ margin: '0 0 0.75rem 0' }} />
           <p className="about__text">
             {about.body}

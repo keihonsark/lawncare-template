@@ -35,46 +35,46 @@ export default function ServiceAreas() {
           <svg viewBox="0 0 500 420" fill="none" xmlns="http://www.w3.org/2000/svg" className="areas__svg" preserveAspectRatio="xMidYMid slice">
             <defs>
               <radialGradient id="centerGlow" cx="50%" cy="48%" r="50%">
-                <stop offset="0%" stopColor="#4caf6e" stopOpacity="0.18" />
-                <stop offset="40%" stopColor="#4caf6e" stopOpacity="0.06" />
-                <stop offset="100%" stopColor="#4caf6e" stopOpacity="0" />
+                <stop offset="0%" stopColor="#2D6B47" stopOpacity="0.18" />
+                <stop offset="40%" stopColor="#2D6B47" stopOpacity="0.06" />
+                <stop offset="100%" stopColor="#2D6B47" stopOpacity="0" />
               </radialGradient>
             </defs>
 
             <rect width="500" height="420" fill="#0a0a0a" />
 
             {Array.from({ length: 20 }, (_, i) => (
-              <line key={`h${i}`} x1="0" y1={i * 22} x2="500" y2={i * 22} stroke="#4caf6e" strokeWidth="0.3" opacity="0.06" />
+              <line key={`h${i}`} x1="0" y1={i * 22} x2="500" y2={i * 22} stroke="#2D6B47" strokeWidth="0.3" opacity="0.06" />
             ))}
             {Array.from({ length: 24 }, (_, i) => (
-              <line key={`v${i}`} x1={i * 22} y1="0" x2={i * 22} y2="420" stroke="#4caf6e" strokeWidth="0.3" opacity="0.06" />
+              <line key={`v${i}`} x1={i * 22} y1="0" x2={i * 22} y2="420" stroke="#2D6B47" strokeWidth="0.3" opacity="0.06" />
             ))}
 
             <rect width="500" height="420" fill="url(#centerGlow)" />
 
-            <circle cx="250" cy="200" r="100" stroke="#4caf6e" strokeWidth="0.8" opacity="0.12" />
-            <circle cx="250" cy="200" r="170" stroke="#4caf6e" strokeWidth="0.6" opacity="0.08" />
+            <circle cx="250" cy="200" r="100" stroke="#2D6B47" strokeWidth="0.8" opacity="0.12" />
+            <circle cx="250" cy="200" r="170" stroke="#2D6B47" strokeWidth="0.6" opacity="0.08" />
 
-            <circle cx="250" cy="200" r="60" stroke="#4caf6e" strokeWidth="1.5" fill="none" className="areas__radar" />
+            <circle cx="250" cy="200" r="60" stroke="#2D6B47" strokeWidth="1.5" fill="none" className="areas__radar" />
 
             {cities.map((c, i) => (
-              <line key={i} x1="250" y1="200" x2={c.x} y2={c.y} stroke="#4caf6e" strokeWidth="1" strokeDasharray="8 5" opacity="0.5" className="areas__flowline" />
+              <line key={i} x1="250" y1="200" x2={c.x} y2={c.y} stroke="#2D6B47" strokeWidth="1" strokeDasharray="8 5" opacity="0.5" className="areas__flowline" />
             ))}
 
-            <circle cx="250" cy="200" r="35" fill="#4caf6e" opacity="0.08" className="areas__glow" />
-            <circle cx="250" cy="200" r="20" fill="#4caf6e" opacity="0.12" className="areas__glow" />
+            <circle cx="250" cy="200" r="35" fill="#2D6B47" opacity="0.08" className="areas__glow" />
+            <circle cx="250" cy="200" r="20" fill="#2D6B47" opacity="0.12" className="areas__glow" />
 
-            <path d="M250 170c-10 0-18 8-18 18 0 12.6 18 31 18 31s18-18.4 18-31c0-10-8-18-18-18z" fill="#4caf6e" className="areas__pin" />
+            <path d="M250 170c-10 0-18 8-18 18 0 12.6 18 31 18 31s18-18.4 18-31c0-10-8-18-18-18z" fill="#2D6B47" className="areas__pin" />
             <circle cx="250" cy="188" r="6" fill="#0a0a0a" />
 
-            <text x="250" y="255" textAnchor="middle" fontFamily="Outfit, sans-serif" fontSize="34" fontWeight="800" fill="#4caf6e" className="areas__fresno-text">{city.toUpperCase()}</text>
+            <text x="250" y="255" textAnchor="middle" fontFamily="Outfit, sans-serif" fontSize="34" fontWeight="800" fill="#2D6B47" className="areas__fresno-text">{city.toUpperCase()}</text>
 
             {cities.map((c) => (
               <g key={c.name}>
-                <circle cx={c.x} cy={c.y} r="12" fill="#4caf6e" opacity="0.08" />
-                <circle cx={c.x} cy={c.y} r="6" fill="#4caf6e" opacity="0.9" />
+                <circle cx={c.x} cy={c.y} r="12" fill="#2D6B47" opacity="0.08" />
+                <circle cx={c.x} cy={c.y} r="6" fill="#2D6B47" opacity="0.9" />
                 <circle cx={c.x} cy={c.y} r="3" fill="#0a0a0a" />
-                <rect x={c.x - 32} y={c.y - 28} width="64" height="20" rx="10" fill="#0f4d25" opacity="0.9" />
+                <rect x={c.x - 32} y={c.y - 28} width="64" height="20" rx="10" fill="#0F2518" opacity="0.9" />
                 <text x={c.x} y={c.y - 14} textAnchor="middle" fontFamily="Outfit, sans-serif" fontSize="11" fontWeight="600" fill="#fff">{c.name}</text>
               </g>
             ))}
