@@ -9,7 +9,9 @@ export default function Navbar({ forceScrolled = false }) {
   const [scrolled, setScrolled] = useState(forceScrolled)
   const [open, setOpen] = useState(false)
   const [svcOpen, setSvcOpen] = useState(false)
+  const [resOpen, setResOpen] = useState(false)
   const svcTimeout = useRef(null)
+  const resTimeout = useRef(null)
   const location = useLocation()
   const navigate = useNavigate()
 
@@ -30,6 +32,15 @@ export default function Navbar({ forceScrolled = false }) {
 
   const handleSvcLeave = () => {
     svcTimeout.current = setTimeout(() => setSvcOpen(false), 180)
+  }
+
+  const handleResEnter = () => {
+    clearTimeout(resTimeout.current)
+    setResOpen(true)
+  }
+
+  const handleResLeave = () => {
+    resTimeout.current = setTimeout(() => setResOpen(false), 180)
   }
 
   useEffect(() => {
@@ -90,15 +101,33 @@ export default function Navbar({ forceScrolled = false }) {
                   <Link to="/services/tree-services" onClick={() => { setSvcOpen(false); setOpen(false) }}>Tree Trimming</Link>
                   <Link to="/services/lawn-maintenance" onClick={() => { setSvcOpen(false); setOpen(false) }}>Lawn Maintenance</Link>
                   <Link to="/services/landscaping-hardscape" onClick={() => { setSvcOpen(false); setOpen(false) }}>Yard Clean Up</Link>
-                  <Link to="/services/irrigation-systems" onClick={() => { setSvcOpen(false); setOpen(false) }}>Sprinkler Repair</Link>
-                  <Link to="/estimate" onClick={() => { setSvcOpen(false); setOpen(false) }} className="nav__dropdown-highlight">Free Estimates</Link>
-                  <Link to="/lawn-estimator" onClick={() => { setSvcOpen(false); setOpen(false) }} className="nav__dropdown-highlight">Lawn Estimator</Link>
-                  <Link to="/lawn-health-quiz" onClick={() => { setSvcOpen(false); setOpen(false) }} className="nav__dropdown-highlight">Lawn Health Quiz</Link>
+                  <Link to="/services/irrigation-systems" onClick={() => { setSvcOpen(false); setOpen(false) }}>Irrigation Systems</Link>
+                  <Link to="/services/mulch-river-rock" onClick={() => { setSvcOpen(false); setOpen(false) }}>Mulch &amp; River Rock</Link>
                 </div>
               )}
             </li>
             <li><a href="#reviews" onClick={(e) => scrollToSection(e, 'reviews')}>Reviews</a></li>
-            <li><Link to="/blog" onClick={() => setOpen(false)}>Blog</Link></li>
+            <li
+              className="nav__dropdown"
+              onMouseEnter={handleResEnter}
+              onMouseLeave={handleResLeave}
+            >
+              <button
+                className="nav__dropdown-toggle"
+                onClick={() => setResOpen(!resOpen)}
+                type="button"
+              >
+                Resources
+                <span className={`nav__chevron ${resOpen ? 'nav__chevron--open' : ''}`}>▾</span>
+              </button>
+              {resOpen && (
+                <div className="nav__dropdown-menu">
+                  <Link to="/blog" onClick={() => { setResOpen(false); setOpen(false) }}>Blog</Link>
+                  <Link to="/lawn-estimator" onClick={() => { setResOpen(false); setOpen(false) }}>Lawn Estimator</Link>
+                  <Link to="/lawn-health-quiz" onClick={() => { setResOpen(false); setOpen(false) }}>Lawn Health Quiz</Link>
+                </div>
+              )}
+            </li>
             <li><a href="#areas" onClick={(e) => scrollToSection(e, 'areas')}>Areas</a></li>
             <li><a href="#contact" onClick={(e) => scrollToSection(e, 'contact')}>Contact</a></li>
           </ul>
