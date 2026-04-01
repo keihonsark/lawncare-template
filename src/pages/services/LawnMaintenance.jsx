@@ -63,8 +63,7 @@ export default function LawnMaintenance() {
     <>
       <Navbar />
 
-      <section className="sp-hero">
-        <img src="/08_lawn_maintenance.png" alt="" className="sp-hero__img" />
+      <section className="sp-hero" style={{ backgroundImage: 'url(/grass-macro-dew.png)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
         <div className="sp-hero__overlay" />
         <div className="container sp-hero__content">
           <h1 className="sp-hero__title">{`Professional Lawn Maintenance in ${config.business.address.replace(', ' + config.business.state, '')}`}</h1>

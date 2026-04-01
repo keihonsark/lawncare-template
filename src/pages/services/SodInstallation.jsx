@@ -63,8 +63,7 @@ export default function SodInstallation() {
     <>
       <Navbar />
 
-      <section className="sp-hero">
-        <img src="/03_sod_installation.png" alt="" className="sp-hero__img" />
+      <section className="sp-hero" style={{ backgroundImage: 'url(/front-lawn-after.png)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
         <div className="sp-hero__overlay" />
         <div className="container sp-hero__content">
           <h1 className="sp-hero__title">{`Sod Installation in ${config.business.address.replace(', ' + config.business.state, '')}`}</h1>

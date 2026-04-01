@@ -63,8 +63,7 @@ export default function MulchRiverRock() {
     <>
       <Navbar />
 
-      <section className="sp-hero">
-        <img src="/mulch.png" alt="" className="sp-hero__img" />
+      <section className="sp-hero" style={{ backgroundImage: 'url(/river-rock.png)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
         <div className="sp-hero__overlay" />
         <div className="container sp-hero__content">
           <h1 className="sp-hero__title">{`Mulch & River Rock Installation in ${config.business.address.replace(', ' + config.business.state, '')}`}</h1>

@@ -17,6 +17,7 @@ import LawnEstimator from './pages/LawnEstimator'
 import LawnHealthQuiz from './pages/LawnHealthQuiz'
 import FloatingCallButton from './components/FloatingCallButton'
 import ChatWidget from './components/ChatWidget'
+import ScrollToTop from './components/ScrollToTop'
 
 document.title = config.seo.title
 document.querySelector('meta[name="description"]')?.setAttribute('content', config.seo.description)
@@ -24,6 +25,7 @@ document.querySelector('meta[name="description"]')?.setAttribute('content', conf
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <BrowserRouter>
+      <ScrollToTop />
       <FloatingCallButton />
       <ChatWidget />
       <Routes>

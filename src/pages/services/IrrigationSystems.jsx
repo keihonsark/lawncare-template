@@ -63,8 +63,7 @@ export default function IrrigationSystems() {
     <>
       <Navbar />
 
-      <section className="sp-hero">
-        <img src="/06_sprinkler_system.png" alt="" className="sp-hero__img" />
+      <section className="sp-hero" style={{ backgroundImage: 'url(/sprinkler-golden-hour.png)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
         <div className="sp-hero__overlay" />
         <div className="container sp-hero__content">
           <h1 className="sp-hero__title">{`Irrigation Systems in ${config.business.address.replace(', ' + config.business.state, '')}`}</h1>

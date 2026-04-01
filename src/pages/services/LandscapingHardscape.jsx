@@ -63,8 +63,7 @@ export default function LandscapingHardscape() {
     <>
       <Navbar />
 
-      <section className="sp-hero">
-        <img src="/landscape-hardscape.png" alt="" className="sp-hero__img" />
+      <section className="sp-hero" style={{ backgroundImage: 'url(/travertine-stone.png)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
         <div className="sp-hero__overlay" />
         <div className="container sp-hero__content">
           <h1 className="sp-hero__title">{`Landscaping & Hardscape in ${config.business.address.replace(', ' + config.business.state, '')}`}</h1>

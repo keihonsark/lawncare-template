@@ -63,8 +63,7 @@ export default function TreeServices() {
     <>
       <Navbar />
 
-      <section className="sp-hero">
-        <img src="/07_tree_service.png" alt="" className="sp-hero__img" />
+      <section className="sp-hero" style={{ backgroundImage: 'url(/hero-image.png)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
         <div className="sp-hero__overlay" />
         <div className="container sp-hero__content">
           <h1 className="sp-hero__title">{`Tree Trimming & Stump Removal in ${config.business.address.replace(', ' + config.business.state, '')}`}</h1>
