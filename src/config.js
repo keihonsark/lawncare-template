@@ -27,7 +27,7 @@ const config = {
     placeId: "",
     mapsUrl: "",
     rating: 5.0,
-    reviewCount: "50+",
+    reviewCount: "27",
     reviews: [
       { name: "Happy Customer", text: "Absolutely top-notch service. Professional, on time, and the yard looks amazing every single week." },
       { name: "Local Homeowner", text: "These guys are the real deal. Reliable, detail-oriented, and always go the extra mile." },

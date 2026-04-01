@@ -2,6 +2,7 @@ import config from '../config'
 import './About.css'
 
 const { about } = config.content
+const { yearsExperience } = config.business
 
 export default function About() {
   return (
@@ -19,7 +20,7 @@ export default function About() {
             className="about__img-small"
           />
           <div className="about__badge about__badge--circle">
-            <span className="about__badge-num">[X]+</span>
+            <span className="about__badge-num">{yearsExperience}+</span>
             <span className="about__badge-text">Years of Experience</span>
           </div>
         </div>
@@ -28,7 +29,7 @@ export default function About() {
         <div className="about__mobile-img">
           <img src="/hero-image.png" alt="Beautiful lawn" />
           <div className="about__badge about__badge--pill">
-            [X]+ Years of Experience
+            {yearsExperience}+ Years of Experience
           </div>
         </div>
 
