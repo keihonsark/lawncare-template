@@ -157,3 +157,30 @@ img {
 .sh--left .sh__line {
   margin-left: 0;
 }
+
+/* Make all fade-up / heading elements immediately visible on mobile */
+@media (max-width: 768px) {
+  .fade-up {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+  .fade-up.visible {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+  .stagger-child {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+  .sh__heading {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+  .sh__line {
+    width: 60px !important;
+    transition: none !important;
+  }
+}

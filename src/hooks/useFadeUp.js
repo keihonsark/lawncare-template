@@ -2,6 +2,8 @@ import { useEffect } from 'react'
 
 export default function useFadeUp() {
   useEffect(() => {
+    if (window.innerWidth <= 768) return
+
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
