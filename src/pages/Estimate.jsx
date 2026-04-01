@@ -311,8 +311,8 @@ export default function Estimate() {
       <div className="est-body">
         <div className="est-card">
           <div className="est-card__logo">
-            <span className="est-card__logo-line1">MonteVerde</span>
-            <span className="est-card__logo-line2">Landscaping</span>
+            <span className="est-card__logo-line1">{config.business.shortName}</span>
+            <span className="est-card__logo-line2">Lawn Care</span>
           </div>
           <h2 className="est-card__title">{STEP_TITLES[step - 1]}</h2>
 

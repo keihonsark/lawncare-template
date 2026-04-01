@@ -1,0 +1,1 @@
+import{readFileSync,writeFileSync}from'fs';let e=readFileSync('src/pages/Estimate.jsx','utf8');e=e.replace('MonteVerde','{config.business.shortName}');e=e.replace('Landscaping','Lawn Care');writeFileSync('src/pages/Estimate.jsx',e,'utf8');console.log('Fixed')

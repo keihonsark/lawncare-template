@@ -51,7 +51,8 @@ export default function Navbar({ forceScrolled = false }) {
     <nav className={`nav ${scrolled ? 'nav--scrolled' : ''}`}>
       <div className="container nav__inner">
         <Link to="/" className="nav__logo">
-          <img src="/monteverde-logo.png" alt="MonteVerde Landscaping" className="nav__logo-img" />
+          <span className="nav__logo-line1">{config.business.shortName}</span>
+          <span className="nav__logo-line2">Lawn Care</span>
         </Link>
 
         <button
