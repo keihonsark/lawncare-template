@@ -160,16 +160,27 @@
 
 /* Process */
 .sp-process {
-  padding: 5rem 0;
-  background: #fff;
+  padding: 80px 0;
+  background: #111111;
+  border-top: 1px solid rgba(26, 122, 60, 0.3);
+}
+
+.sp-process__eyebrow {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 0.1em;
+  color: #1a7a3c;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
 }
 
 .sp-process__title {
   font-size: 2rem;
   font-weight: 800;
-  color: #0a0a0a;
+  color: #fff;
   text-align: center;
-  margin-bottom: 3rem;
+  margin-bottom: 3.5rem;
 }
 
 .sp-process__grid {
@@ -178,31 +189,50 @@
   gap: 1.5rem;
   max-width: 900px;
   margin: 0 auto;
+  position: relative;
+}
+
+/* Horizontal dashed line connecting the circles */
+.sp-process__grid::before {
+  content: '';
+  position: absolute;
+  top: 28px;
+  left: calc(12.5% + 28px);
+  right: calc(12.5% + 28px);
+  height: 0;
+  border-top: 2px dashed rgba(26, 122, 60, 0.3);
+  z-index: 0;
 }
 
 .sp-process__step {
   text-align: center;
+  position: relative;
+  z-index: 1;
 }
 
 .sp-process__num {
-  width: 48px;
-  height: 48px;
+  width: 56px;
+  height: 56px;
   border-radius: 50%;
-  background: #1a7a3c;
-  color: #fff;
+  background: transparent;
+  border: 2px solid #1a7a3c;
+  color: #1a7a3c;
   font-weight: 800;
   font-size: 1.25rem;
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 0 auto 1rem;
+  box-shadow: 0 0 12px rgba(26, 122, 60, 0.4);
 }
 
 .sp-process__label {
-  font-size: 0.95rem;
+  font-size: 16px;
   font-weight: 600;
-  color: #333;
+  color: #fff;
   line-height: 1.5;
+  max-width: 140px;
+  margin: 0 auto;
 }
 
 /* Pricing */
@@ -450,8 +480,19 @@
   }
 
   .sp-process__grid {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 2rem;
+    max-width: 280px;
+  }
+
+  .sp-process__grid::before {
+    display: none;
+  }
+
+  .sp-process__step {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
   }
 
   .sp-pricing__grid {

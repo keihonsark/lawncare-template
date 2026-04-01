@@ -95,6 +95,7 @@ export default function MulchRiverRock() {
 
       <section className="sp-process fade-up">
         <div className="container">
+          <p className="sp-process__eyebrow">Our Process</p>
           <h2 className="sp-process__title">How It Works</h2>
           <div className="sp-process__grid">
             {process.map((step, i) => (
