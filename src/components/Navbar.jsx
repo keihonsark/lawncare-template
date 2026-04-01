@@ -13,6 +13,16 @@ export default function Navbar({ forceScrolled = false }) {
   const location = useLocation()
   const navigate = useNavigate()
 
+  const scrollToSection = (e, sectionId) => {
+    e.preventDefault()
+    setOpen(false)
+    if (location.pathname === '/') {
+      document.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth' })
+    } else {
+      navigate('/#' + sectionId)
+    }
+  }
+
   const handleSvcEnter = () => {
     clearTimeout(svcTimeout.current)
     setSvcOpen(true)
@@ -41,7 +51,7 @@ export default function Navbar({ forceScrolled = false }) {
     <nav className={`nav ${scrolled ? 'nav--scrolled' : ''}`}>
       <div className="container nav__inner">
         <Link to="/" className="nav__logo">
-          <img src="/logo-placeholder.png" alt={name} style={{ height: 48, width: 'auto', objectFit: 'contain' }} />
+          <img src="/logo-placeholder.png" alt={name} style={{ height: 56, width: 'auto', objectFit: 'contain', alignSelf: 'center' }} />
         </Link>
 
         <button
@@ -87,10 +97,10 @@ export default function Navbar({ forceScrolled = false }) {
                 </div>
               )}
             </li>
-            <li><a href="#reviews" onClick={() => setOpen(false)}>Reviews</a></li>
+            <li><a href="#reviews" onClick={(e) => scrollToSection(e, 'reviews')}>Reviews</a></li>
             <li><Link to="/blog" onClick={() => setOpen(false)}>Blog</Link></li>
-            <li><a href="#areas" onClick={(e) => { setOpen(false); if (location.pathname !== '/') { e.preventDefault(); navigate('/'); setTimeout(() => { const el = document.getElementById('areas'); if (el) el.scrollIntoView({ behavior: 'smooth' }); }, 100); } }}>Areas</a></li>
-            <li><a href="#contact" onClick={() => setOpen(false)}>Contact</a></li>
+            <li><a href="#areas" onClick={(e) => scrollToSection(e, 'areas')}>Areas</a></li>
+            <li><a href="#contact" onClick={(e) => scrollToSection(e, 'contact')}>Contact</a></li>
           </ul>
           <Link to="/estimate" className="nav__estimate" onClick={() => setOpen(false)}>
             Get Instant Estimate

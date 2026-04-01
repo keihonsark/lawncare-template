@@ -1,6 +1,6 @@
-import { StrictMode } from 'react'
+import { StrictMode, useEffect } from 'react'
 import { createRoot } from 'react-dom/client'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom'
 import './index.css'
 import config from './config'
 import Home from './pages/Home'
@@ -19,6 +19,19 @@ import FloatingCallButton from './components/FloatingCallButton'
 import ChatWidget from './components/ChatWidget'
 import ScrollToTop from './components/ScrollToTop'
 
+function HashScroller() {
+  const location = useLocation()
+  useEffect(() => {
+    if (location.hash) {
+      const id = location.hash.replace('#', '')
+      setTimeout(() => {
+        document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' })
+      }, 100)
+    }
+  }, [location])
+  return null
+}
+
 document.title = config.seo.title
 document.querySelector('meta[name="description"]')?.setAttribute('content', config.seo.description)
 
@@ -26,6 +39,7 @@ createRoot(document.getElementById('root')).render(
   <StrictMode>
     <BrowserRouter>
       <ScrollToTop />
+      <HashScroller />
       <FloatingCallButton />
       <ChatWidget />
       <Routes>

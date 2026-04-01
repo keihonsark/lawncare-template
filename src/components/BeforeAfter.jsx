@@ -17,8 +17,8 @@ function Slider({ before, after, label }) {
 
   const updatePos = useCallback((clientX) => {
     const rect = containerRef.current.getBoundingClientRect()
-    const x = Math.max(0, Math.min(clientX - rect.left, rect.width))
-    setPos((x / rect.width) * 100)
+    const ratio = (clientX - rect.left) / rect.width
+    setPos(Math.max(0, Math.min(100, ratio * 100)))
   }, [])
 
   const onMouseDown = useCallback((e) => {

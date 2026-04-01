@@ -27,7 +27,8 @@
       "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:5175/)",
       "Bash(ls -la c:/Users/SS/Desktop/lawncare-bros/public/hero* c:/Users/SS/Desktop/lawncare-bros/public/Hero*)",
       "Bash(ls c:/Users/SS/Desktop/lawncare-bros/src/pages/services/*.jsx)",
-      "Bash(ls \"c:\\\\Users\\\\SS\\\\Desktop\\\\clientwebsites\\\\lawncare\\\\lawncare-template\\\\public\\\\Images\"\" 2>/dev/null || ls \"c:/Users/SS/Desktop/clientwebsites/lawncare/lawncare-template/public/Images/ \")"
+      "Bash(ls \"c:\\\\Users\\\\SS\\\\Desktop\\\\clientwebsites\\\\lawncare\\\\lawncare-template\\\\public\\\\Images\"\" 2>/dev/null || ls \"c:/Users/SS/Desktop/clientwebsites/lawncare/lawncare-template/public/Images/ \")",
+      "Bash(npm ls:*)"
     ]
   }
 }
