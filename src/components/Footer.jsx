@@ -44,7 +44,7 @@ export default function Footer() {
 
       <div className="footer__bottom">
         <div className="container footer__bottom-inner">
-          <p>&copy; 2025 {name} &middot; {license} &middot; Hablamos Español</p>
+          <p>&copy; 2025 {name} &middot; {license}</p>
           <p className="footer__sark">
             Site by{' '}
             <a href="https://sark.agency" target="_blank" rel="noopener noreferrer" className="footer__sark-link">

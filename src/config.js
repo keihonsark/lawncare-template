@@ -65,7 +65,7 @@ const config = {
       google: { title: "5.0 \u2605\u2605\u2605\u2605\u2605", sub: "" },
       facebook: { title: "Active on Facebook", sub: "" },
       licensed: { title: "Lic # 0000000", sub: "Licensed \u00b7 Insured \u00b7 Bonded" },
-      bilingual: { title: "Bilingual Service", sub: "English & Spanish Available" },
+      satisfaction: { title: "Satisfaction Guaranteed", sub: "Your Yard, Our Priority" },
     },
     services: {
       eyebrow: "What We Do",

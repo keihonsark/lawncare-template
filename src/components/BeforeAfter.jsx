@@ -21,12 +21,6 @@ function Slider({ before, after, label }) {
     setPos(Math.max(0, Math.min(100, ratio * 100)))
   }, [])
 
-  const onMouseDown = useCallback((e) => {
-    e.preventDefault()
-    dragging.current = true
-    updatePos(e.clientX)
-  }, [updatePos])
-
   const onMouseMove = useCallback((e) => {
     if (!dragging.current) return
     updatePos(e.clientX)
@@ -34,7 +28,17 @@ function Slider({ before, after, label }) {
 
   const onMouseUp = useCallback(() => {
     dragging.current = false
-  }, [])
+    document.removeEventListener('mousemove', onMouseMove)
+    document.removeEventListener('mouseup', onMouseUp)
+  }, [onMouseMove])
+
+  const onMouseDown = useCallback((e) => {
+    e.preventDefault()
+    dragging.current = true
+    updatePos(e.clientX)
+    document.addEventListener('mousemove', onMouseMove)
+    document.addEventListener('mouseup', onMouseUp)
+  }, [updatePos, onMouseMove, onMouseUp])
 
   const onTouchStart = useCallback((e) => {
     const t = e.touches[0]
@@ -73,9 +77,6 @@ function Slider({ before, after, label }) {
         className="ba__slider"
         ref={containerRef}
         onMouseDown={onMouseDown}
-        onMouseMove={onMouseMove}
-        onMouseUp={onMouseUp}
-        onMouseLeave={onMouseUp}
         onTouchStart={onTouchStart}
         onTouchMove={onTouchMove}
         onTouchEnd={onTouchEnd}

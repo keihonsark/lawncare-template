@@ -39,7 +39,8 @@ function CountUp({ end, suffix = '', duration = 1600 }) {
   )
 }
 
-const { reviewCount, yearsExperience } = config.business
+const { reviewCount } = config.google
+const { yearsExperience } = config.business
 const yearsExp = yearsExperience || 10
 
 export default function StatsCounter() {
@@ -54,7 +55,7 @@ export default function StatsCounter() {
             <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18A10.96 10.96 0 001 12c0 1.77.42 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/>
             <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/>
           </svg>
-          <span className="stats__num stats__num--gradient">{reviewCount}</span>
+          <CountUp end={parseInt(reviewCount, 10)} />
           <div className="stats__google-stars">★★★★★</div>
           <span className="stats__label">5-Star Reviews</span>
         </div>

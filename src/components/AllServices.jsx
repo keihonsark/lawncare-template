@@ -16,7 +16,6 @@ const allServices = [
   'Valve Replacement',
   'Weekly Maintenance',
   'Bi-Weekly Maintenance',
-  'Hablamos Español',
   'Free Estimates',
 ]
 
