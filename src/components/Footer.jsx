@@ -34,8 +34,10 @@ export default function Footer() {
         <div className="footer__col">
           <h4>Contact</h4>
           <ul>
-            <li><a href={`tel:${phoneTel}`}>English: {phone}</a></li>
-            <li><a href={`tel:${phoneSpanishTel}`}>Español: {phoneSpanish}</a></li>
+            <li><a href={`tel:${phoneTel}`}>{phoneSpanish && phoneSpanish !== phone ? 'English: ' : ''}{phone}</a></li>
+            {phoneSpanish && phoneSpanish !== phone && (
+              <li><a href={`tel:${phoneSpanishTel}`}>Español: {phoneSpanish}</a></li>
+            )}
             <li><a href={`mailto:${email}`}>{email}</a></li>
             <li>{address}</li>
             <li>{hoursShort}</li>

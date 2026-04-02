@@ -226,9 +226,14 @@ export default function Estimate() {
       estimateRange: `$${formatPrice(totalLow)} – $${formatPrice(totalHigh)}`,
     }
 
+    if (!config.business.formspreeId) {
+      console.warn('Estimate form not connected: formspreeId is empty in config.')
+      alert('This form is not connected yet. Please call us instead!')
+      setSubmitting(false)
+      return
+    }
     try {
-      /* TODO: Replace with client Formspree endpoint */
-      await fetch(config.business.formspreeId ? `https://formspree.io/f/${config.business.formspreeId}` : '#', {
+      await fetch(`https://formspree.io/f/${config.business.formspreeId}`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
         body: JSON.stringify(body),

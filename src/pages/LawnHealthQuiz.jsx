@@ -125,22 +125,25 @@ export default function LawnHealthQuiz() {
   const handleLeadSubmit = async () => {
     if (!phone.trim()) return
     setSubmitting(true)
-    try {
-      /* TODO: Replace with client Formspree endpoint */
-      await fetch(config.business.formspreeId ? `https://formspree.io/f/${config.business.formspreeId}` : '#', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
-        body: JSON.stringify({
-          source: 'Lawn Health Quiz',
-          firstName,
-          phone,
-          email,
-          lawnScore: totalScore,
-          lawnGrade: grade.letter,
-          answers: answers.map((a) => `${questions[a.qIndex].q}: ${questions[a.qIndex].options[a.optIndex].text}`).join(' | '),
-        }),
-      })
-    } catch { /* silent */ }
+    if (!config.business.formspreeId) {
+      console.warn('Quiz form not connected: formspreeId is empty in config.')
+    } else {
+      try {
+        await fetch(`https://formspree.io/f/${config.business.formspreeId}`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+          body: JSON.stringify({
+            source: 'Lawn Health Quiz',
+            firstName,
+            phone,
+            email,
+            lawnScore: totalScore,
+            lawnGrade: grade.letter,
+            answers: answers.map((a) => `${questions[a.qIndex].q}: ${questions[a.qIndex].options[a.optIndex].text}`).join(' | '),
+          }),
+        })
+      } catch { /* silent */ }
+    }
     setSubmitting(false)
     setStep(6)
   }

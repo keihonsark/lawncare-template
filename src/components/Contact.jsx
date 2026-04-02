@@ -9,10 +9,14 @@ export default function Contact() {
 
   const handleSubmit = async (e) => {
     e.preventDefault()
+    if (!formspreeId) {
+      console.warn('Contact form not connected: formspreeId is empty in config.')
+      alert('This form is not connected yet. Please call us instead!')
+      return
+    }
     const form = e.target
     try {
-      /* TODO: Replace with client Formspree endpoint */
-      await fetch(formspreeId ? `https://formspree.io/f/${formspreeId}` : '#', {
+      await fetch(`https://formspree.io/f/${formspreeId}`, {
         method: 'POST',
         body: new FormData(form),
         headers: { Accept: 'application/json' },
