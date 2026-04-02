@@ -4,6 +4,7 @@ import Navbar from '../../components/Navbar'
 import Footer from '../../components/Footer'
 import useFadeUp from '../../hooks/useFadeUp'
 import StatsCounter from '../../components/StatsCounter'
+import Reviews from '../../components/Reviews'
 import ProcessSection from '../../components/ProcessSection'
 import './ServicePage.css'
 import config from '../../config'
@@ -43,19 +44,6 @@ const faqs = [
   },
 ]
 
-const reviews = config.google.reviews
-
-function Stars() {
-  return (
-    <div className="sp-reviews__stars">
-      {Array.from({ length: 5 }, (_, i) => (
-        <svg key={i} width="16" height="16" viewBox="0 0 20 20" fill="#f5a623">
-          <path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.51.91-5.32L2.27 6.62l5.34-.78L10 1z" />
-        </svg>
-      ))}
-    </div>
-  )
-}
 
 export default function IrrigationSystems() {
   const [openFaq, setOpenFaq] = useState(null)
@@ -115,20 +103,7 @@ export default function IrrigationSystems() {
         </div>
       </section>
 
-      <section className="sp-reviews">
-        <div className="container">
-          <h2 className="sp-reviews__title">What Our Clients Say</h2>
-          <div className="sp-reviews__grid">
-            {reviews.map((r) => (
-              <div key={r.name} className="sp-reviews__card">
-                <Stars />
-                <p className="sp-reviews__text">&ldquo;{r.text}&rdquo;</p>
-                <p className="sp-reviews__author">{r.name}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      <Reviews />
 
       <section className="sp-cta">
         <div className="container">
