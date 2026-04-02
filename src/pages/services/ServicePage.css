@@ -40,7 +40,7 @@
 
 .sp-hero__sub {
   font-size: 1.2rem;
-  color: #2D6B47;
+  color: rgba(255, 255, 255, 0.85);
   font-weight: 500;
   margin-bottom: 2rem;
 }
