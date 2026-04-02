@@ -37,7 +37,7 @@
 
 @media (max-width: 768px) {
   .trust__grid {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 0;
   }
 
@@ -45,10 +45,5 @@
     justify-content: flex-start;
     padding: 1rem;
     border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-  }
-
-  .trust__item:last-child {
-    grid-column: 1 / -1;
-    justify-content: center;
   }
 }
