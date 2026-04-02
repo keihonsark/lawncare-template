@@ -11,6 +11,7 @@ export default function Footer() {
       <div className="container footer__grid">
         <div className="footer__brand">
           <div className="footer__logo">
+            <img src="/leaf-icon.svg" alt="" className="footer__logo-icon" />
             <span className="footer__logo-line1">{config.business.shortName}</span>
           </div>
           <p className="footer__desc">

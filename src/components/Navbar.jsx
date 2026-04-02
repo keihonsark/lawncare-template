@@ -62,6 +62,7 @@ export default function Navbar({ forceScrolled = false }) {
     <nav className={`nav ${scrolled ? 'nav--scrolled' : ''}`}>
       <div className="container nav__inner">
         <Link to="/" className="nav__logo">
+          <img src="/leaf-icon.svg" alt="" className="nav__logo-icon" />
           <span className="nav__logo-line1">{config.business.shortName}</span>
         </Link>
 

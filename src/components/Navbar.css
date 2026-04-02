@@ -25,7 +25,13 @@
 .nav__logo {
   display: flex;
   align-items: center;
+  gap: 0.5rem;
   transition: color 0.3s;
+}
+
+.nav__logo-icon {
+  height: 30px;
+  width: auto;
 }
 
 /* Text Logo */

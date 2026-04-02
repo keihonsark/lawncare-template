@@ -32,6 +32,7 @@ export default function Hero() {
 
       <div className="container hero__content">
         <div className="hero__logo">
+          <img src="/leaf-icon.svg" alt="" className="hero__logo-icon" />
           <span className="hero__logo-line1">{config.business.shortName}</span>
         </div>
 
