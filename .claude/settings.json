@@ -29,7 +29,8 @@
       "Bash(ls c:/Users/SS/Desktop/lawncare-bros/src/pages/services/*.jsx)",
       "Bash(ls \"c:\\\\Users\\\\SS\\\\Desktop\\\\clientwebsites\\\\lawncare\\\\lawncare-template\\\\public\\\\Images\"\" 2>/dev/null || ls \"c:/Users/SS/Desktop/clientwebsites/lawncare/lawncare-template/public/Images/ \")",
       "Bash(npm ls:*)",
-      "Bash(xxd \"c:/Users/SS/Desktop/clientwebsites/lawncare/lawncare-template/src/config.js\")"
+      "Bash(xxd \"c:/Users/SS/Desktop/clientwebsites/lawncare/lawncare-template/src/config.js\")",
+      "Bash(ls *.mjs)"
     ]
   }
 }

@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import config from '../config'
 import './Footer.css'
 
@@ -20,12 +21,12 @@ export default function Footer() {
         <div className="footer__col">
           <h4>Services</h4>
           <ul>
-            <li><a href="#services">Pruning</a></li>
-            <li><a href="#services">Tree Trimming</a></li>
-            <li><a href="#services">Lawn Maintenance</a></li>
-            <li><a href="#services">Yard Clean Up</a></li>
-            <li><a href="#services">Sprinkler Repair</a></li>
-            <li><a href="#services">Free Estimates</a></li>
+            <li><Link to="/services/pruning">Pruning</Link></li>
+            <li><Link to="/services/tree-services">Tree Trimming</Link></li>
+            <li><Link to="/services/lawn-maintenance">Lawn Maintenance</Link></li>
+            <li><Link to="/services/yard-clean-up">Yard Clean Up</Link></li>
+            <li><Link to="/services/irrigation-systems">Irrigation Systems</Link></li>
+            <li><Link to="/services/mulch-river-rock">Mulch &amp; River Rock</Link></li>
           </ul>
         </div>
 
