@@ -13,6 +13,8 @@ import TreeServices from './pages/services/TreeServices'
 import IrrigationSystems from './pages/services/IrrigationSystems'
 import MulchRiverRock from './pages/services/MulchRiverRock'
 import LandscapingHardscape from './pages/services/LandscapingHardscape'
+import Pruning from './pages/services/Pruning'
+import YardCleanUp from './pages/services/YardCleanUp'
 import LawnEstimator from './pages/LawnEstimator'
 import LawnHealthQuiz from './pages/LawnHealthQuiz'
 import FloatingCallButton from './components/FloatingCallButton'
@@ -53,6 +55,8 @@ createRoot(document.getElementById('root')).render(
         <Route path="/services/irrigation-systems" element={<IrrigationSystems />} />
         <Route path="/services/mulch-river-rock" element={<MulchRiverRock />} />
         <Route path="/services/landscaping-hardscape" element={<LandscapingHardscape />} />
+        <Route path="/services/pruning" element={<Pruning />} />
+        <Route path="/services/yard-clean-up" element={<YardCleanUp />} />
         <Route path="/lawn-estimator" element={<LawnEstimator />} />
         <Route path="/lawn-health-quiz" element={<LawnHealthQuiz />} />
       </Routes>

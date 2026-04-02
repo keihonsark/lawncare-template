@@ -30,7 +30,7 @@ const faqs = [
     a: 'We recommend staying off new sod for at least 2–3 weeks to allow the roots to establish. Light foot traffic is fine after that, but avoid heavy use for about 4–6 weeks.',
   },
   {
-    q: 'What type of sod works best in [City]?',
+    q: 'What type of sod works best for my yard?',
     a: 'Bermuda grass is a popular choice for warm climates — it thrives in heat and handles heavy sun. Tall Fescue is another option for partially shaded yards. We help you choose the best variety for your property.',
   },
   {
@@ -43,7 +43,7 @@ const faqs = [
   },
 ]
 
-const reviews = config.google.reviews.slice(1, 3)
+const reviews = config.google.reviews
 
 function Stars() {
   return (
@@ -65,7 +65,7 @@ export default function SodInstallation() {
     <>
       <Navbar />
 
-      <section className="sp-hero" style={{ backgroundImage: 'url(/front-lawn-after.png)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
+      <section className="sp-hero" style={{ backgroundImage: 'url(/03_sod_installation.png)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
         <div className="sp-hero__overlay" />
         <div className="container sp-hero__content">
           <h1 className="sp-hero__title">Sod Installation</h1>

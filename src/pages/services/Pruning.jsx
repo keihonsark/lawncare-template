@@ -9,37 +9,37 @@ import './ServicePage.css'
 import config from '../../config'
 
 const included = [
-  'Sprinkler system installation',
-  'Drip irrigation setup',
-  'System repair & troubleshooting',
-  'Head replacement & adjustment',
-  'Timer & controller programming',
-  'Seasonal system tune-ups',
+  'Shrub shaping',
+  'Hedge trimming',
+  'Ornamental pruning',
+  'Seasonal clean-up cuts',
+  'Plant health assessment',
+  'Debris removal',
 ]
 
 const process = [
-  'Free on-site assessment',
-  'Custom system design',
-  'Professional installation',
-  'Testing & walkthrough',
+  'Call for free estimate',
+  'We assess your plants',
+  'Pruning plan & schedule',
+  'Clean, precise results',
 ]
 
 const faqs = [
   {
-    q: 'How do I know if my sprinkler system needs repair?',
-    a: "Look for dry patches, pooling water, low pressure, or heads that don't pop up. If your water bill spikes unexpectedly, that's another sign of a leak or malfunction.",
+    q: 'How often should shrubs and hedges be pruned?',
+    a: 'Most shrubs and hedges benefit from pruning 2–3 times per year. Fast-growing varieties may need monthly trimming during peak season to stay looking sharp.',
   },
   {
-    q: 'Do you install drip irrigation for garden beds?',
-    a: "Absolutely. Drip irrigation is ideal for flower beds, vegetable gardens, and trees. It delivers water directly to the roots, reducing waste and keeping your plants healthier.",
+    q: 'Is there a best time of year to prune?',
+    a: 'It depends on the plant. Spring-blooming shrubs should be pruned right after they flower. Most other shrubs and hedges do well with pruning in late winter or early spring before new growth begins.',
   },
   {
-    q: 'How long does a sprinkler installation take?',
-    a: "Most residential installations take 1–2 days depending on yard size and system complexity. We handle everything from trenching to wiring the controller.",
+    q: 'Will pruning damage my plants?',
+    a: 'Not when done properly. Professional pruning actually promotes healthier growth, better shape, and improved airflow. We use clean, sharp tools and follow best practices for each plant type.',
   },
   {
-    q: 'Can you add zones to my existing system?',
-    a: "Yes. We can expand your current system with additional zones, heads, or drip lines to cover new landscaping or areas that aren't getting enough water.",
+    q: 'Do you clean up all the clippings?',
+    a: 'Yes. Every pruning job includes full debris cleanup. We haul away all clippings and leave your property looking clean and tidy.',
   },
 ]
 
@@ -57,7 +57,7 @@ function Stars() {
   )
 }
 
-export default function IrrigationSystems() {
+export default function Pruning() {
   const [openFaq, setOpenFaq] = useState(null)
   useFadeUp()
 
@@ -65,11 +65,11 @@ export default function IrrigationSystems() {
     <>
       <Navbar />
 
-      <section className="sp-hero" style={{ backgroundImage: 'url(/06_sprinkler_system.png)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
+      <section className="sp-hero" style={{ backgroundImage: 'url(/09_hedge_trimming.png)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
         <div className="sp-hero__overlay" />
         <div className="container sp-hero__content">
-          <h1 className="sp-hero__title">Irrigation Systems</h1>
-          <p className="sp-hero__sub">Sprinkler and drip system installation and repair for efficient, reliable watering.</p>
+          <h1 className="sp-hero__title">Professional Pruning Services</h1>
+          <p className="sp-hero__sub">Keep your shrubs, hedges, and ornamental plants shaped, healthy, and looking their best year-round.</p>
           <Link to="/estimate" className="sp-hero__btn">Get a Free Estimate</Link>
         </div>
       </section>

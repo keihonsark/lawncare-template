@@ -43,7 +43,7 @@ const faqs = [
   },
 ]
 
-const reviews = config.google.reviews.slice(5, 7)
+const reviews = config.google.reviews
 
 function Stars() {
   return (
@@ -65,7 +65,7 @@ export default function LandscapingHardscape() {
     <>
       <Navbar />
 
-      <section className="sp-hero" style={{ backgroundImage: 'url(/travertine-stone.png)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
+      <section className="sp-hero" style={{ backgroundImage: 'url(/landscape-hardscape.png)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
         <div className="sp-hero__overlay" />
         <div className="container sp-hero__content">
           <h1 className="sp-hero__title">Landscaping &amp; Hardscape</h1>

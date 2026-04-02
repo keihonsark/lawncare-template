@@ -97,10 +97,10 @@ export default function Navbar({ forceScrolled = false }) {
               </button>
               {svcOpen && (
                 <div className="nav__dropdown-menu">
-                  <Link to="/services/lawn-maintenance" onClick={() => { setSvcOpen(false); setOpen(false) }}>Pruning</Link>
+                  <Link to="/services/pruning" onClick={() => { setSvcOpen(false); setOpen(false) }}>Pruning</Link>
                   <Link to="/services/tree-services" onClick={() => { setSvcOpen(false); setOpen(false) }}>Tree Trimming</Link>
                   <Link to="/services/lawn-maintenance" onClick={() => { setSvcOpen(false); setOpen(false) }}>Lawn Maintenance</Link>
-                  <Link to="/services/landscaping-hardscape" onClick={() => { setSvcOpen(false); setOpen(false) }}>Yard Clean Up</Link>
+                  <Link to="/services/yard-clean-up" onClick={() => { setSvcOpen(false); setOpen(false) }}>Yard Clean Up</Link>
                   <Link to="/services/irrigation-systems" onClick={() => { setSvcOpen(false); setOpen(false) }}>Irrigation Systems</Link>
                   <Link to="/services/mulch-river-rock" onClick={() => { setSvcOpen(false); setOpen(false) }}>Mulch &amp; River Rock</Link>
                 </div>

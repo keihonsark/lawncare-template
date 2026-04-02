@@ -26,7 +26,7 @@ const process = [
 
 const faqs = [
   {
-    q: 'How often should I mow in [City]?',
+    q: 'How often should I mow my lawn?',
     a: 'During spring and summer, we recommend weekly mowing to keep your lawn healthy. In fall you can stretch to every 10–14 days, and winter is usually monthly.',
   },
   {
@@ -43,7 +43,7 @@ const faqs = [
   },
 ]
 
-const reviews = config.google.reviews.slice(0, 2)
+const reviews = config.google.reviews
 
 function Stars() {
   return (
@@ -65,7 +65,7 @@ export default function LawnMaintenance() {
     <>
       <Navbar />
 
-      <section className="sp-hero" style={{ backgroundImage: 'url(/grass-macro-dew.png)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
+      <section className="sp-hero" style={{ backgroundImage: 'url(/08_lawn_maintenance.png)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
         <div className="sp-hero__overlay" />
         <div className="container sp-hero__content">
           <h1 className="sp-hero__title">Professional Lawn Maintenance</h1>

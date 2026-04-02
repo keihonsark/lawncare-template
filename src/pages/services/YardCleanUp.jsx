@@ -9,37 +9,37 @@ import './ServicePage.css'
 import config from '../../config'
 
 const included = [
-  'Sprinkler system installation',
-  'Drip irrigation setup',
-  'System repair & troubleshooting',
-  'Head replacement & adjustment',
-  'Timer & controller programming',
-  'Seasonal system tune-ups',
+  'Debris hauling',
+  'Weed removal',
+  'Overgrown area clearing',
+  'Leaf removal',
+  'Bed edging & cleanup',
+  'Property walkthrough',
 ]
 
 const process = [
-  'Free on-site assessment',
-  'Custom system design',
-  'Professional installation',
-  'Testing & walkthrough',
+  'Call for free estimate',
+  'We assess the property',
+  'Crew clears everything out',
+  'Final walkthrough & cleanup',
 ]
 
 const faqs = [
   {
-    q: 'How do I know if my sprinkler system needs repair?',
-    a: "Look for dry patches, pooling water, low pressure, or heads that don't pop up. If your water bill spikes unexpectedly, that's another sign of a leak or malfunction.",
+    q: 'How long does a yard clean up take?',
+    a: 'It depends on the size and condition of the yard. A standard clean up typically takes half a day. Heavily overgrown or neglected properties may take a full day or more.',
   },
   {
-    q: 'Do you install drip irrigation for garden beds?',
-    a: "Absolutely. Drip irrigation is ideal for flower beds, vegetable gardens, and trees. It delivers water directly to the roots, reducing waste and keeping your plants healthier.",
+    q: 'Do you haul away all the debris?',
+    a: 'Yes. We remove and haul away all debris, clippings, branches, and waste. Your property will be completely clean when we leave.',
   },
   {
-    q: 'How long does a sprinkler installation take?',
-    a: "Most residential installations take 1–2 days depending on yard size and system complexity. We handle everything from trenching to wiring the controller.",
+    q: 'Can you handle severely overgrown yards?',
+    a: 'Absolutely. We specialize in bringing neglected properties back to life. No yard is too overgrown — we have the equipment and crew to handle it.',
   },
   {
-    q: 'Can you add zones to my existing system?',
-    a: "Yes. We can expand your current system with additional zones, heads, or drip lines to cover new landscaping or areas that aren't getting enough water.",
+    q: 'Do you offer recurring clean up services?',
+    a: 'Yes. Many clients pair a one-time deep clean with an ongoing maintenance plan to keep their yard looking great year-round. Ask us about weekly and bi-weekly options.',
   },
 ]
 
@@ -57,7 +57,7 @@ function Stars() {
   )
 }
 
-export default function IrrigationSystems() {
+export default function YardCleanUp() {
   const [openFaq, setOpenFaq] = useState(null)
   useFadeUp()
 
@@ -65,11 +65,11 @@ export default function IrrigationSystems() {
     <>
       <Navbar />
 
-      <section className="sp-hero" style={{ backgroundImage: 'url(/06_sprinkler_system.png)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
+      <section className="sp-hero" style={{ backgroundImage: 'url(/04_yard_cleanup.png)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
         <div className="sp-hero__overlay" />
         <div className="container sp-hero__content">
-          <h1 className="sp-hero__title">Irrigation Systems</h1>
-          <p className="sp-hero__sub">Sprinkler and drip system installation and repair for efficient, reliable watering.</p>
+          <h1 className="sp-hero__title">Professional Yard Clean Up</h1>
+          <p className="sp-hero__sub">Clear out the mess — overgrown areas, seasonal debris, and neglected yards restored to clean, usable space.</p>
           <Link to="/estimate" className="sp-hero__btn">Get a Free Estimate</Link>
         </div>
       </section>

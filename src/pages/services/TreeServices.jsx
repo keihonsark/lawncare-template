@@ -43,7 +43,7 @@ const faqs = [
   },
 ]
 
-const reviews = config.google.reviews.slice(2, 4)
+const reviews = config.google.reviews
 
 function Stars() {
   return (
@@ -65,7 +65,7 @@ export default function TreeServices() {
     <>
       <Navbar />
 
-      <section className="sp-hero" style={{ backgroundImage: 'url(/hero-image.png)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
+      <section className="sp-hero" style={{ backgroundImage: 'url(/07_tree_service.png)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
         <div className="sp-hero__overlay" />
         <div className="container sp-hero__content">
           <h1 className="sp-hero__title">Tree Trimming &amp; Stump Removal</h1>
